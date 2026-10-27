@@ -1116,35 +1116,20 @@ h1 em, h2 em {
   letter-spacing: 0.15em;
 }
 
-/* ==================== REALISTIC 3D BIRTHDAY CAKE & CEREMONY ==================== */
+/* Cake Cut Celebration Night Ambiance */
 body.cake-blackout-active {
-  background-color: #000000 !important;
-  transition: background-color 1.2s ease;
-}
-
-.celebration-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0);
-  pointer-events: none;
-  z-index: 22;
-  transition: background 1.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-body.cake-blackout-active .celebration-backdrop {
-  background: rgba(0, 0, 0, 0.94);
+  background-color: #030206 !important;
+  transition: background-color 0.8s ease;
 }
 
 .cake-section {
   position: relative;
   background: radial-gradient(circle at 50% 35%, #3d0a22 0%, #150516 70%, var(--midnight) 100%);
-  transition: background 1.5s ease, box-shadow 1.5s ease;
+  transition: background 0.8s ease;
 }
 
 body.cake-blackout-active .cake-section {
-  z-index: 24;
-  background: radial-gradient(circle at 50% 40%, rgba(255, 230, 180, 0.22) 0%, rgba(10, 3, 12, 0.95) 50%, #000000 85%) !important;
-  box-shadow: inset 0 0 180px rgba(0, 0, 0, 1);
+  background: radial-gradient(circle at 50% 40%, rgba(255, 230, 180, 0.22) 0%, rgba(10, 3, 12, 0.95) 50%, #030206 85%) !important;
 }
 
 .cake-stage {
@@ -1572,7 +1557,6 @@ footer .love-icon {
 
 <!-- Ambient Canvas (Petals, Bokeh, Confetti, Sparks, Fireworks) -->
 <canvas id="fx"></canvas>
-<div class="celebration-backdrop" id="celebrationBackdrop"></div>
 
 <!-- Top Floating Capsule Navigation -->
 <header class="top-nav">
@@ -2656,8 +2640,39 @@ function playFlameWhooshSound() {
   } catch(e) {}
 }
 
-// ==================== Happy Birthday Song (Web Audio Synthesizer) ====================
+// ==================== Happy Birthday Song & Celebration Blackout ====================
 let birthdaySongPlaying = false;
+let blackoutTimer = null;
+
+function onBlackoutTap() {
+  endCakeBlackout();
+}
+
+function startCakeBlackout(durationMs = 8500) {
+  document.body.classList.add('cake-blackout-active');
+  if (blackoutTimer) {
+    clearTimeout(blackoutTimer);
+  }
+  // Automatically remove blackout right after the fireworks (~8.5s)
+  blackoutTimer = setTimeout(() => {
+    endCakeBlackout();
+  }, durationMs);
+
+  // Tap anywhere on screen immediately restores normal stage
+  setTimeout(() => {
+    window.addEventListener('pointerdown', onBlackoutTap, { capture: true, once: true });
+  }, 350);
+}
+
+function endCakeBlackout() {
+  if (blackoutTimer) {
+    clearTimeout(blackoutTimer);
+    blackoutTimer = null;
+  }
+  window.removeEventListener('pointerdown', onBlackoutTap, { capture: true });
+  document.body.classList.remove('cake-blackout-active');
+}
+
 function playHappyBirthdaySong() {
   if (!audioCtx || birthdaySongPlaying) return;
   birthdaySongPlaying = true;
@@ -2741,7 +2756,7 @@ function playHappyBirthdaySong() {
     totalDur += dur;
   });
 
-  // When song completes, restore background music smoothly
+  // When song completes, restore background music smoothly and return to normal stage
   setTimeout(() => {
     birthdaySongPlaying = false;
     if (masterGain) {
@@ -2749,6 +2764,7 @@ function playHappyBirthdaySong() {
       masterGain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + 1.8);
     }
     startMusic();
+    endCakeBlackout(); // Return to normal stage!
   }, (totalDur + 1.2) * 1000);
 }
 
@@ -3228,7 +3244,7 @@ if (btnBlow) {
 if (btnCut) {
   btnCut.addEventListener('click', () => {
     // 1. MAKE BACKGROUND FULL BLACK WITH SPOTLIGHT ON CAKE
-    document.body.classList.add('cake-blackout-active');
+    startCakeBlackout(8500);
 
     // 2. Start golden knife slice animation & sound
     cakeStage.classList.add('cutting-animation');

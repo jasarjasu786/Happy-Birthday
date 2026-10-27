@@ -1,0 +1,3537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, My Shifu 💕 | Forever Yours</title>
+<meta name="description" content="A private romantic love letter and luxury birthday experience for my beloved wife Shifu on October 28.">
+<meta property="og:title" content="Happy Birthday, My Shifu 💕">
+<meta property="og:description" content="Across every mile, my heart is right beside you. Happy Birthday, my wife.">
+<meta property="og:image" content="photos/optimized/portrait_hero.jpg">
+<meta name="theme-color" content="#05040a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@200;300;400;500;600&family=Pinyon+Script&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --midnight: #05040a;
+  --noir: #090710;
+  --surface-glass: rgba(255, 255, 255, 0.035);
+  --border-glass: rgba(245, 215, 150, 0.18);
+  --border-glass-hover: rgba(245, 215, 150, 0.45);
+  --sapphire-dark: #081126;
+  --sapphire: #2563eb;
+  --sapphire-glow: #60a5fa;
+  --gold: #f3c98b;
+  --gold-warm: #d4af37;
+  --gold-light: #ffebd2;
+  --rose: #e63956;
+  --rose-glow: #ff6b85;
+  --cream: #faf6f0;
+  --cream-soft: #f4ece1;
+  --muted: rgba(250, 246, 240, 0.68);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --cinzel: 'Cinzel', serif;
+  --script: 'Pinyon Script', cursive;
+  --hand: 'Caveat', cursive;
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--midnight);
+  color: var(--cream);
+  font-family: var(--sans);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body {
+  background: var(--midnight);
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom, 24px);
+  letter-spacing: -0.01em;
+}
+
+/* Luxury Film Grain Overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99;
+  opacity: .028;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Ambient Canvas Particles (Petals, Stars, Confetti, Smoke, Fireworks) */
+#fx {
+  position: fixed;
+  inset: 0;
+  z-index: 28;
+  pointer-events: none;
+}
+
+/* Floating Luxury Navigation Capsule */
+.top-nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 980px);
+  height: 56px;
+  z-index: 85;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgba(10, 8, 18, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-glass);
+  border-radius: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-brand {
+  font-family: var(--cinzel);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.nav-brand .sparkle-monogram {
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.countdown-pill {
+  font-size: 11px;
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(243, 201, 139, 0.25);
+  padding: 6px 14px;
+  border-radius: 30px;
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown-pill .pulse-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--rose);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--rose);
+  animation: blinkDot 1.4s infinite;
+}
+
+@keyframes blinkDot {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Audio Player Capsule */
+.audio-capsule {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass);
+  color: var(--cream);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.audio-capsule:hover {
+  background: rgba(243, 201, 139, 0.15);
+  border-color: var(--gold);
+}
+
+.equalizer-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 12px;
+}
+
+.eq-bar {
+  width: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  height: 4px;
+}
+
+.playing .eq-bar:nth-child(1) { animation: soundWave 1.1s infinite alternate ease-in-out; }
+.playing .eq-bar:nth-child(2) { animation: soundWave 0.8s 0.2s infinite alternate ease-in-out; }
+.playing .eq-bar:nth-child(3) { animation: soundWave 1.3s 0.4s infinite alternate ease-in-out; }
+
+@keyframes soundWave {
+  0% { height: 3px; }
+  100% { height: 12px; }
+}
+
+/* Section Common Container */
+.section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 90px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.section-content {
+  position: relative;
+  z-index: 15;
+  max-width: 840px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Luxury Editorial Headings */
+.chapter-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--cinzel);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.chapter-meta::before, .chapter-meta::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.45;
+}
+
+h1, h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(44px, 8.5vw, 76px);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: clamp(32px, 6.5vw, 52px);
+  margin-bottom: 18px;
+}
+
+h1 em, h2 em {
+  font-family: var(--script);
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 400;
+  font-size: 1.25em;
+  padding: 0 6px;
+  text-shadow: 0 0 35px rgba(243, 201, 139, 0.4);
+}
+
+.subtitle {
+  font-size: clamp(15px, 3.5vw, 17.5px);
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+.personal-whisper {
+  font-family: var(--hand);
+  font-size: clamp(23px, 5vw, 30px);
+  line-height: 1.55;
+  color: var(--gold-light);
+  margin: 24px auto;
+  max-width: 640px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.gold-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 28px auto;
+  opacity: 0.6;
+}
+
+/* Luxury Modern Buttons */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 36px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #f3c98b, #c49a58);
+  color: #150a04;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #ffebd2;
+  box-shadow: 0 12px 30px rgba(243, 201, 139, 0.35);
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold:hover, .btn-gold:active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(243, 201, 139, 0.5);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--border-glass);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(243, 201, 139, 0.14);
+  border-color: var(--gold);
+}
+
+/* ==================== HERO SECTION & STARGAZING ==================== */
+.hero-section {
+  background: radial-gradient(circle at 50% 28%, #200816 0%, #0d040f 50%, var(--midnight) 100%);
+  padding-top: 140px;
+}
+
+.constellation-sky {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 15% 25%, #fff 100%, transparent),
+    radial-gradient(2px 2px at 85% 20%, #ffd9a0 100%, transparent),
+    radial-gradient(1.5px 1.5px at 35% 65%, #ffd9a0 100%, transparent),
+    radial-gradient(2px 2px at 75% 75%, #60a5fa 100%, transparent),
+    radial-gradient(1px 1px at 20% 80%, #fff 100%, transparent),
+    radial-gradient(2px 2px at 90% 60%, #ffd9a0 100%, transparent);
+  background-size: 260px 260px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.interactive-star {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 25;
+  filter: drop-shadow(0 0 12px var(--gold));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.interactive-star:hover {
+  transform: scale(1.4);
+}
+
+.interactive-star .star-pulse {
+  width: 11px;
+  height: 11px;
+  background: var(--gold-light);
+  clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
+  animation: starTwinkle 2.5s infinite;
+}
+
+@keyframes starTwinkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; }
+  50% { transform: scale(1.6) rotate(180deg); opacity: 1; filter: drop-shadow(0 0 14px #fff); }
+}
+
+.star-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--cinzel);
+  font-size: 9.5px;
+  color: var(--gold);
+  white-space: nowrap;
+  letter-spacing: 0.18em;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+/* Faceless Couple Silhouette */
+.hero-illustration-wrap {
+  width: 155px;
+  margin: 0 auto 16px;
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
+  animation: floatSoftly 6s ease-in-out infinite;
+}
+
+@keyframes floatSoftly {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* High-End Portrait Card */
+.hero-frame-wrapper {
+  position: relative;
+  max-width: 410px;
+  width: 90%;
+  margin: 24px auto 30px;
+  perspective: 1400px;
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 24px;
+  padding: 14px 14px 24px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.015));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.85), 0 0 60px rgba(230, 57, 86, 0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.hero-card:hover {
+  transform: rotateY(2deg) rotateX(-2deg) scale(1.015);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.95), 0 0 70px rgba(243, 201, 139, 0.35);
+  border-color: var(--border-glass-hover);
+}
+
+.hero-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 18px;
+  filter: saturate(1.05) contrast(1.02);
+  display: block;
+}
+
+.hero-card-caption {
+  font-family: var(--hand);
+  font-size: 22px;
+  color: var(--gold-light);
+  margin-top: 16px;
+}
+
+/* ==================== CHAPTER I: THE LENS ==================== */
+.camera-viewfinder {
+  position: relative;
+  max-width: 470px;
+  width: 94%;
+  margin: 28px auto 32px;
+  border-radius: 20px;
+  padding: 16px;
+  background: #110f17;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.85);
+}
+
+.viewfinder-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.viewfinder-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.03);
+}
+
+.camera-hud-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border-glass);
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+}
+
+.camera-crosshair {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.camera-crosshair::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(243, 201, 139, 0.4);
+  border-radius: 50%;
+}
+
+/* ==================== PHOTO GALLERIES (POLAROIDS) ==================== */
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 620px;
+  width: 100%;
+  margin: 32px auto;
+}
+
+@media (min-width: 640px) {
+  .photo-gallery-grid.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.polaroid-card {
+  position: relative;
+  background: #f7f3ec;
+  padding: 10px 10px 22px;
+  border-radius: 6px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+  color: #1e1319;
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.polaroid-card:nth-child(odd) { transform: rotate(-2deg); }
+.polaroid-card:nth-child(even) { transform: rotate(2deg) translateY(6px); }
+
+.polaroid-card:hover {
+  transform: rotate(0) scale(1.06) translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.85);
+  z-index: 10;
+}
+
+.polaroid-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+}
+
+.polaroid-caption {
+  font-family: var(--hand);
+  font-size: 18.5px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #5a1928;
+}
+
+/* ==================== CHAPTER IV: OUR CELEBRATION IN THE RAIN ==================== */
+.rain-section {
+  background: radial-gradient(circle at 50% 30%, #2b0819 0%, #100413 75%, var(--midnight) 100%);
+  position: relative;
+}
+
+.steamy-window-container {
+  position: relative;
+  max-width: 560px;
+  width: 95%;
+  height: 390px;
+  margin: 28px auto;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.85);
+}
+
+.steamy-window-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.steam-canvas {
+  position: absolute;
+  inset: 0;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.steam-hint {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(8px);
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--border-glass);
+  font-family: var(--hand);
+  font-size: 17px;
+  color: var(--gold-light);
+  pointer-events: none;
+  animation: pulseSteam 2s infinite;
+}
+
+@keyframes pulseSteam {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.4; }
+}
+
+/* ==================== CHAPTER V: LUXURY 3D GIFT BOX UNBOXING ==================== */
+.gift-chapter-section {
+  background: radial-gradient(circle at 50% 30%, #0c1b3d 0%, #060c1d 65%, var(--midnight) 100%);
+  position: relative;
+  min-height: 110vh;
+}
+
+/* 3D Jewelry Box Stage */
+.luxury-box-stage {
+  position: relative;
+  max-width: 540px;
+  width: 95%;
+  margin: 40px auto 30px;
+  perspective: 1400px;
+}
+
+.jewelry-box-container {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+/* The Closed Velvet Box Base */
+.box-base {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(circle at 40% 30%, #1e3a8a, #0a1329 80%);
+  border: 2px solid rgba(245, 215, 150, 0.4);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.9), inset 0 0 30px rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Gold Embossed Filigree Crest */
+.box-crest {
+  font-family: var(--cinzel);
+  text-align: center;
+  color: var(--gold);
+  border: 1px solid rgba(245, 215, 150, 0.35);
+  border-radius: 12px;
+  padding: 16px 20px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+}
+
+.box-crest h4 {
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  margin-bottom: 4px;
+}
+
+.box-crest span {
+  font-family: var(--script);
+  font-size: 26px;
+  color: var(--gold-light);
+}
+
+/* Satin Ribbon with Bow */
+.box-ribbon-v {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  background: linear-gradient(90deg, #b8860b, #ffd700 50%, #b8860b);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  transition: all 0.8s ease;
+}
+
+.box-ribbon-h {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 32px;
+  background: linear-gradient(180deg, #b8860b, #ffd700 50%, #b8860b);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  transition: all 0.8s ease;
+}
+
+.box-bow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffe082, #d4af37 60%, #996515);
+  border: 2px solid #fff;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  z-index: 10;
+  transition: all 0.7s ease;
+}
+
+/* Box Lid (Opens Backward in 3D) */
+.box-lid {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(circle at 40% 30%, #1e3a8a, #0d1b3d 85%);
+  border: 2px solid rgba(245, 215, 150, 0.5);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.85);
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Revealed Velvet Cushion & Bracelet Content */
+.box-reveal-content {
+  position: relative;
+  max-width: 490px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 16px;
+  background: linear-gradient(145deg, rgba(37, 99, 235, 0.16), rgba(8, 17, 38, 0.75));
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.95), 0 0 70px rgba(37, 99, 235, 0.35);
+  display: none;
+  opacity: 0;
+  transform: scale(0.9) translateY(30px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.box-reveal-content.opened {
+  display: block;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Opened Box State */
+.jewelry-box-container.is-open .box-ribbon-v,
+.jewelry-box-container.is-open .box-ribbon-h,
+.jewelry-box-container.is-open .box-bow {
+  opacity: 0;
+  transform: scale(0.6);
+  pointer-events: none;
+}
+
+.jewelry-box-container.is-open .box-lid {
+  transform: rotateX(-120deg) translateZ(40px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.jewelry-box-container.is-open {
+  transform: scale(0.85) translateY(-20px);
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Radiant Burst of Light */
+.gift-light-burst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%) scale(0.2);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 215, 150, 0.9) 0%, rgba(96, 165, 250, 0.6) 40%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 1s ease;
+  z-index: 6;
+  mix-blend-mode: screen;
+}
+
+.gift-light-burst.active {
+  transform: translate(-50%, -50%) scale(1.8);
+  opacity: 1;
+}
+
+.bracelet-img-wrap {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.bracelet-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.sapphire-refraction {
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.9) 0%, rgba(37, 99, 235, 0.45) 45%, transparent 75%);
+  pointer-events: none;
+  animation: sapphirePulse 3s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+
+@keyframes sapphirePulse {
+  0%, 100% { transform: scale(0.9); opacity: 0.5; }
+  50% { transform: scale(1.7); opacity: 1; filter: drop-shadow(0 0 30px #60a5fa); }
+}
+
+.sapphire-sparkle {
+  position: absolute;
+  top: 46%;
+  left: 47%;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
+  pointer-events: none;
+  animation: sparkleTwinkle 2.4s infinite;
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% { transform: scale(0.4) rotate(0deg); opacity: 0.2; }
+  50% { transform: scale(1.5) rotate(180deg); opacity: 1; }
+}
+
+.bracelet-message-box {
+  background: rgba(8, 17, 38, 0.85);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin-top: 24px;
+  backdrop-filter: blur(12px);
+}
+
+/* ==================== GIMMICK: TOUCH HANDS ACROSS THE DISTANCE ==================== */
+.touch-bridge-section {
+  background: radial-gradient(circle at 50% 30%, #170d30 0%, #070512 70%, var(--midnight) 100%);
+  position: relative;
+  padding: 90px 20px;
+}
+
+.hands-bridge-container {
+  position: relative;
+  max-width: 580px;
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 26px;
+  padding: 34px 24px;
+  background: linear-gradient(145deg, rgba(243, 201, 139, 0.08), rgba(37, 99, 235, 0.08));
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hands-visual-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 440px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.hand-node {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #151122;
+  border: 2px solid var(--gold);
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  box-shadow: 0 0 25px rgba(243, 201, 139, 0.25);
+}
+
+.bridge-glow-line {
+  flex: 1;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 0 14px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.bridge-glow-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #e63956, #f3c98b, #3b82f6);
+  box-shadow: 0 0 15px var(--gold);
+  transition: width 0.1s linear;
+}
+
+.touch-target-btn {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e63956, #881329);
+  border: 2px solid var(--gold);
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+  cursor: pointer;
+  box-shadow: 0 0 35px rgba(230, 57, 86, 0.45);
+  transition: transform 0.2s, box-shadow 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+.touch-target-btn.active {
+  transform: scale(1.15);
+  box-shadow: 0 0 65px rgba(230, 57, 86, 0.95);
+}
+
+/* ==================== CINEMATIC FILM STRIP ==================== */
+.film-section {
+  background: #050409;
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+}
+
+.film-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.film-nav-btn {
+  background: rgba(243, 201, 139, 0.1);
+  border: 1px solid var(--border-glass);
+  color: var(--gold-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.film-nav-btn:hover {
+  background: var(--gold);
+  color: #120914;
+  transform: scale(1.1);
+}
+
+.film-counter-badge {
+  font-family: var(--cinzel);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-glass);
+  padding: 7px 18px;
+  border-radius: 20px;
+}
+
+.film-reel-viewport {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 30px 0;
+  background: #030206;
+  border-block: 1px solid rgba(243, 201, 139, 0.2);
+  cursor: grab;
+}
+
+.film-reel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.film-reel-viewport:active {
+  cursor: grabbing;
+}
+
+.sprocket-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: repeating-linear-gradient(90deg, #d8cdbd 0 12px, transparent 12px 28px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.sprocket-top { top: 8px; }
+.sprocket-bottom { bottom: 8px; }
+
+.film-track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  padding: 10px 40px;
+}
+
+.film-frame {
+  width: 180px;
+  height: 245px;
+  flex: none;
+  background: #141318;
+  padding: 10px 10px 32px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.85);
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.film-frame:hover {
+  transform: scale(1.08) translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.95), 0 0 25px rgba(243, 201, 139, 0.35);
+  z-index: 10;
+  border-color: var(--gold);
+}
+
+.film-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  filter: contrast(1.03) saturate(1.02);
+}
+
+.film-frame .frame-date {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  font-family: monospace;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+}
+
+/* ==================== REALISTIC 3D BIRTHDAY CAKE & CEREMONY ==================== */
+body.cake-blackout-active {
+  background-color: #000000 !important;
+  transition: background-color 1.2s ease;
+}
+
+.celebration-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  z-index: 22;
+  transition: background 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.cake-blackout-active .celebration-backdrop {
+  background: rgba(0, 0, 0, 0.94);
+}
+
+.cake-section {
+  position: relative;
+  background: radial-gradient(circle at 50% 35%, #3d0a22 0%, #150516 70%, var(--midnight) 100%);
+  transition: background 1.5s ease, box-shadow 1.5s ease;
+}
+
+body.cake-blackout-active .cake-section {
+  z-index: 24;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 230, 180, 0.22) 0%, rgba(10, 3, 12, 0.95) 50%, #000000 85%) !important;
+  box-shadow: inset 0 0 180px rgba(0, 0, 0, 1);
+}
+
+.cake-stage {
+  position: relative;
+  width: 340px;
+  height: 350px;
+  margin: 20px auto 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cake-stage::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 225, 160, 0.28) 0%, rgba(230, 57, 86, 0.14) 45%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.4s ease;
+  z-index: 0;
+}
+
+body.cake-blackout-active .cake-stage::before {
+  opacity: 1;
+  animation: spotlightPulse 3.5s infinite alternate ease-in-out;
+}
+
+@keyframes spotlightPulse {
+  0% { transform: translateX(-50%) scale(0.95); opacity: 0.8; }
+  100% { transform: translateX(-50%) scale(1.1); opacity: 1; }
+}
+
+.cake-svg {
+  width: 320px;
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.85));
+  cursor: pointer;
+}
+
+.flame-particle {
+  transform-origin: center bottom;
+  animation: flickerFlame 0.35s infinite alternate ease-in-out;
+  cursor: pointer;
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+@keyframes flickerFlame {
+  0% { transform: scale(1) rotate(-3deg); filter: drop-shadow(0 0 10px #ffb02e); }
+  100% { transform: scale(1.15, 0.9) rotate(4deg); filter: drop-shadow(0 0 20px #ff4500); }
+}
+
+.candles-blown .flame-particle {
+  opacity: 0;
+  transform: scale(0.1) translateY(-14px);
+  pointer-events: none;
+}
+
+.golden-knife {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 100px;
+  cursor: pointer;
+  transform: rotate(-35deg);
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.6));
+  z-index: 25;
+}
+
+.cutting-animation .golden-knife {
+  animation: sliceCake 1.6s forwards;
+}
+
+@keyframes sliceCake {
+  0% { transform: translate(0, 0) rotate(-35deg); }
+  35% { transform: translate(-85px, 90px) rotate(15deg); }
+  60% { transform: translate(-85px, 150px) rotate(0deg); }
+  80% { transform: translate(-85px, 160px) rotate(-10deg); }
+  100% { transform: translate(-10px, 30px) rotate(-45deg); opacity: 0; }
+}
+
+.cake-slice-cut {
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.cut-done .cake-slice-cut {
+  transform: translate(32px, 16px) rotate(6deg);
+}
+
+/* Plated First Bite Reveal */
+.first-bite-stage {
+  display: none;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(243, 201, 139, 0.08));
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  padding: 24px 28px;
+  margin: 24px auto 0;
+  max-width: 480px;
+  animation: bannerFadeIn 0.8s ease-out;
+}
+
+.dessert-plate-svg {
+  width: 140px;
+  margin: 0 auto 12px;
+  filter: drop-shadow(0 12px 25px rgba(0,0,0,0.6));
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.dessert-plate-svg:hover {
+  transform: scale(1.08);
+}
+
+.wish-banner {
+  display: none;
+  background: linear-gradient(135deg, rgba(243, 201, 139, 0.2), rgba(230, 57, 86, 0.2));
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-top: 24px;
+  animation: bannerFadeIn 0.8s ease-out;
+}
+
+@keyframes bannerFadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== 6 REASONS 3D FLIP CARDS ==================== */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 560px;
+  width: 100%;
+  margin: 32px auto;
+}
+
+@media (min-width: 600px) {
+  .reasons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.flip-card {
+  aspect-ratio: 3/4;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.flip-front {
+  background: linear-gradient(145deg, #1b0816, #0c030b);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+
+.flip-front .card-num {
+  font-family: var(--serif);
+  font-size: 38px;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.flip-front .card-lbl {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(250, 246, 240, 0.7);
+  margin-top: 8px;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  background: var(--cream);
+  color: #2b0b1b;
+  border: 1px solid var(--gold);
+  font-family: var(--serif);
+  font-size: 15.5px;
+  font-weight: 500;
+  line-height: 1.45;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.7);
+}
+
+/* ==================== GOLDEN SCRATCH CARD ==================== */
+.scratch-box {
+  position: relative;
+  width: 340px;
+  max-width: 95%;
+  height: 170px;
+  margin: 30px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--gold);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+}
+
+.scratch-secret {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #fff7ed, #fed7aa);
+  color: #7c1a2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  text-align: center;
+}
+
+.scratch-secret h4 {
+  font-family: var(--cinzel);
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  color: #991b1b;
+  margin-bottom: 6px;
+}
+
+.scratch-secret p {
+  font-family: var(--hand);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #450a0a;
+}
+
+.scratch-canvas {
+  position: absolute;
+  inset: 0;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+/* ==================== WAX SEALED LETTER ==================== */
+.envelope-wrap {
+  perspective: 900px;
+  margin: 30px auto;
+  width: 290px;
+  height: 185px;
+  cursor: pointer;
+}
+
+.envelope {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c49257, #966733);
+  border-radius: 10px;
+  box-shadow: 0 28px 55px rgba(0,0,0,0.75);
+  transition: transform 0.5s ease;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 105px;
+  background: linear-gradient(#d6a267, #b27c42);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 4;
+}
+
+.envelope.open .envelope-flap {
+  transform: rotateX(180deg);
+}
+
+.wax-seal {
+  position: absolute;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff5270, #990f2b);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.55);
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+/* Lightbox Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  background: rgba(5, 4, 10, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal-overlay.active {
+  display: flex;
+  animation: modalIn 0.4s ease-out;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-card {
+  position: relative;
+  max-width: 520px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--cream);
+  color: #2b0b1b;
+  border-radius: 14px;
+  padding: 44px 34px 38px;
+  box-shadow: 0 40px 85px rgba(0,0,0,0.9);
+  border: 1px solid var(--gold);
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #5a1928;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.modal-parchment h3 {
+  font-family: var(--script);
+  font-size: 48px;
+  color: #990f2b;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.modal-parchment p {
+  font-family: var(--hand);
+  font-size: 22.5px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #3b1928;
+  margin-bottom: 22px;
+}
+
+.modal-parchment .signature {
+  font-family: var(--script);
+  font-size: 38px;
+  color: #990f2b;
+  margin-top: 28px;
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 15;
+  text-align: center;
+  padding: 70px 20px 45px;
+  background: #020204;
+  border-top: 1px solid var(--border-glass);
+  font-size: 13.5px;
+  color: rgba(250, 246, 240, 0.65);
+}
+
+footer .love-icon {
+  color: var(--rose);
+  display: inline-block;
+  animation: heartPulse 1.4s infinite;
+}
+
+/* Scroll reveal helper */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- Ambient Canvas (Petals, Bokeh, Confetti, Sparks, Fireworks) -->
+<canvas id="fx"></canvas>
+<div class="celebration-backdrop" id="celebrationBackdrop"></div>
+
+<!-- Top Floating Capsule Navigation -->
+<header class="top-nav">
+  <div class="nav-brand">
+    <span class="sparkle-monogram">✦</span>
+    <span>Shifu &amp; Me</span>
+  </div>
+  
+  <div class="countdown-pill" id="countdown-banner">
+    <div class="pulse-dot"></div>
+    <span id="countdown-text">Oct 28 · <span id="timer-display">Midnight Awaits</span></span>
+  </div>
+
+  <div class="nav-actions">
+    <button class="audio-capsule" id="music-toggle" aria-label="Toggle Romantic Melody">
+      <div class="equalizer-bars" id="eqBars">
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+      </div>
+      <span id="music-label">Melody</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ==================== HERO SECTION & MIDNIGHT WHISPER STARS ==================== -->
+  <section class="section hero-section" id="hero">
+    <div class="constellation-sky"></div>
+
+    <!-- 4 Interactive Constellation Stars (Midnight Whispers Gimmick) -->
+    <div class="interactive-star" style="top: 18%; left: 12%;" onclick="openStarWhisper(1)">
+      <div class="star-pulse"></div>
+      <span class="star-label">✦ I</span>
+    </div>
+    <div class="interactive-star" style="top: 22%; right: 14%;" onclick="openStarWhisper(2)">
+      <div class="star-pulse"></div>
+      <span class="star-label">✦ II</span>
+    </div>
+    <div class="interactive-star" style="top: 65%; left: 8%;" onclick="openStarWhisper(3)">
+      <div class="star-pulse"></div>
+      <span class="star-label">✦ III</span>
+    </div>
+    <div class="interactive-star" style="top: 68%; right: 10%;" onclick="openStarWhisper(4)">
+      <div class="star-pulse"></div>
+      <span class="star-label">✦ IV</span>
+    </div>
+    
+    <div class="section-content">
+      <!-- Faceless couple editorial illustration (Her in mustard, Him in navy under the stars) -->
+      <div class="hero-illustration-wrap">
+        <svg viewBox="0 0 200 270" style="width:100%;">
+          <defs>
+            <linearGradient id="mustardGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f6c24a"/>
+              <stop offset="100%" stop-color="#c47f12"/>
+            </linearGradient>
+            <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3d5287"/>
+              <stop offset="100%" stop-color="#141c3c"/>
+            </linearGradient>
+          </defs>
+          <path d="M52 44c0-24 38-24 38 0v72c4 34-6 56-19 56s-23-22-19-56z" fill="#140a08"/>
+          <path d="M58 40q12-12 26 0" stroke="#fff" stroke-opacity=".25" stroke-width="3" fill="none"/>
+          <rect x="64" y="64" width="14" height="14" fill="#a56d48"/>
+          <path d="M42 82q29-14 58 0l8 130H34z" fill="url(#mustardGrad)"/>
+          <path d="M96 84q18 40 6 120" stroke="#fff3" stroke-width="5" fill="none"/>
+          <path d="M44 212h62l4 50H40z" fill="#c47f12" opacity=".5"/>
+          <circle cx="142" cy="32" r="20" fill="#120a09"/>
+          <rect x="134" y="48" width="16" height="14" fill="#7a4a30"/>
+          <path d="M104 74q38-16 76 0l4 124h-84z" fill="url(#navyGrad)"/>
+          <g fill="#fff" opacity=".6">
+            <circle cx="130" cy="96" r="2"/>
+            <circle cx="138" cy="102" r="2"/>
+            <circle cx="146" cy="96" r="2"/>
+            <circle cx="154" cy="102" r="2"/>
+          </g>
+          <path d="M100 198h82l8 66H92z" fill="#f1e6d6"/>
+          <path d="M92 150q8-6 14 0" stroke="#a56d48" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="chapter-meta">Private Love Letter · October 28</div>
+      <h1>Happy Birthday,<br><em>my darling Shifu</em> 💕</h1>
+      <p class="subtitle">
+        I wish more than anything in this world that I could hold you in my arms the moment midnight strikes.
+        Miles may keep us apart tonight, but distance can never touch what we have.
+        Every beat of my heart belongs only to you.
+      </p>
+
+      <div style="font-size:10.5px; font-family:var(--cinzel); letter-spacing:0.25em; color:var(--gold); margin-bottom:20px; opacity:0.9;">
+        ✦ TAP THE STARS IN THE SKY TO UNCOVER MY MIDNIGHT THOUGHTS ✦
+      </div>
+
+      <!-- Couple Portrait Card with Parallax Tilt -->
+      <div class="hero-frame-wrapper">
+        <div class="hero-card" id="heroCard">
+          <img src="photos/optimized/portrait_hero.jpg" alt="Shifu and Husband" class="hero-img">
+          <div class="hero-card-caption">
+            “Under the golden lights, holding you close... my home is wherever you are.”
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top: 12px;">
+        <a href="#camera-section" class="btn-gold">Walk With Me Through Our Story ↓</a>
+        <a href="#gift-section" class="btn-outline">Open Your Birthday Gift 🎁</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PART 1: WHERE MY EYES FIRST FOUND YOU ==================== -->
+  <section class="section" id="camera-section" style="background: linear-gradient(180deg, var(--midnight) 0%, #150617 100%);">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">01 · Where It All Began</div>
+      <h2>It began <em>behind my camera</em></h2>
+      <p class="subtitle">
+        I used to look through my camera just searching for beautiful pictures.
+        Then you walked into my frame. When you looked back at me and smiled,
+        my heart stopped—and I knew I would never want to look at anyone else for the rest of my life.
+      </p>
+
+      <!-- Camera Viewfinder Frame -->
+      <div class="camera-viewfinder">
+        <div class="viewfinder-inner">
+          <img src="photos/optimized/first_photo.jpg" alt="First photo of Shifu through camera lens" class="viewfinder-img">
+          <div class="camera-crosshair"></div>
+          <div class="camera-hud-badge">
+            <span style="color:#ff4444;">●</span>
+            <span>FOCUS: ONLY YOU</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gold-divider"></div>
+
+      <p class="personal-whisper">
+        “I always pretended to be adjusting the camera focus whenever I looked at you. But truth is, my love... I was never checking the focus. I was simply falling in love with you.”
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== PART 2: THE DAY WE SAID YES ==================== -->
+  <section class="section" id="engagement-section" style="background: radial-gradient(circle at 50% 30%, #2a081a 0%, #0f0312 70%, var(--midnight) 100%);">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">02 · July 30, 2023</div>
+      <h2>When our hands <em>chose forever</em></h2>
+      <p class="subtitle">
+        I still remember how my hands trembled when I slipped that gold ring onto your finger.
+        In that single moment, every quiet prayer of my life was answered.
+        I looked into your eyes and saw my whole future smiling back at me.
+      </p>
+
+      <!-- Engagement 4 Polaroids -->
+      <div class="photo-gallery-grid grid-4">
+        <div class="polaroid-card">
+          <img src="photos/optimized/engagement_1.jpg" alt="Engagement Ceremony">
+          <div class="polaroid-caption">July 30, 2023</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/engagement_2.jpg" alt="Holding Hands with Ring">
+          <div class="polaroid-caption">My Hand In Yours</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/engagement_3.jpg" alt="Engagement Portrait">
+          <div class="polaroid-caption">The Promise</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/engagement_4.jpg" alt="Celebration of Two Families">
+          <div class="polaroid-caption">One Destiny</div>
+        </div>
+      </div>
+
+      <div class="gold-divider"></div>
+
+      <p class="personal-whisper">
+        “I thought my heart was full until that day. Then you placed your hand in mine, and you made my world infinite.”
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== PART 3: THE WEDDING ==================== -->
+  <section class="section" id="wedding-section" style="background: linear-gradient(180deg, #0f0312 0%, #1f071d 50%, var(--midnight) 100%);">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">03 · February 2024</div>
+      <h2>And “Yes” became <em>“Always”</em></h2>
+      <p class="subtitle">
+        Flowers falling through the air, sacred blessings, and you glowing beside me in gold.
+        That day I stopped saying “my life” and started saying “our life”.
+        Thank you for being the most radiant bride this world has ever seen.
+      </p>
+
+      <!-- Wedding Photo Grid -->
+      <div class="photo-gallery-grid grid-4">
+        <div class="polaroid-card">
+          <img src="photos/optimized/wedding_1.jpg" alt="Wedding Vows">
+          <div class="polaroid-caption">Our Sacred Vows</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/wedding_2.jpg" alt="Exchanging Rings">
+          <div class="polaroid-caption">Eternal Bond</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/wedding_3.jpg" alt="Under the Floral Arch">
+          <div class="polaroid-caption">You and Me</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/wedding_4.jpg" alt="Forever in Love">
+          <div class="polaroid-caption">My Wife Forever</div>
+        </div>
+      </div>
+
+      <div class="gold-divider"></div>
+
+      <p class="personal-whisper">
+        “Every single day of my life, I thank God for the blessing of waking up knowing you are my wife.”
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== PART 4: OUR EARLY CELEBRATION IN THE RAIN (STEAM WINDOW GIMMICK) ==================== -->
+  <section class="section rain-section" id="celebration-section">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">04 · October 26 Midnight</div>
+      <h2>Our car was <em>our whole universe</em></h2>
+      <p class="subtitle">
+        Because duty and distance keep us apart on October 28, we refused to let the calendar steal your special day.
+        Two nights early, we stole our own midnight in the car surrounded by quiet rain.
+      </p>
+
+      <!-- Interactive Steamy Rainy Car Window (Wipe Fog Gimmick) -->
+      <div class="steamy-window-container">
+        <img src="photos/optimized/celebration_couple_selfie.jpg" alt="Couple in car" class="steamy-window-bg">
+        <canvas class="steam-canvas" id="steamCanvas"></canvas>
+        <div class="steam-hint">✨ Wipe the foggy window with your finger ✨</div>
+      </div>
+
+      <!-- Additional Car celebration memories -->
+      <div class="photo-gallery-grid" style="max-width: 580px; margin-top: 24px;">
+        <div class="polaroid-card">
+          <img src="photos/optimized/celebration_cupcake.jpg" alt="Shifu holding birthday cupcake">
+          <div class="polaroid-caption">My Birthday Girl 🧁</div>
+        </div>
+        <div class="polaroid-card">
+          <img src="photos/optimized/celebration_holding_hands.jpg" alt="Holding hands with roses and bracelet">
+          <div class="polaroid-caption">Holding Hands in the Rain</div>
+        </div>
+      </div>
+
+      <div class="gold-divider"></div>
+
+      <p class="personal-whisper">
+        “Miles may keep us apart tonight, my love, but in my heart, I am still sitting right beside you in that car, holding your hand under the rain.”
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== PART 5: LUXURY 3D GIFT BOX UNBOXING (THE BLUE STONE BRACELET) ==================== -->
+  <section class="section gift-chapter-section" id="gift-section">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">05 · The Birthday Gift</div>
+      <h2>A piece of the midnight sky, <em>just for you</em></h2>
+      <p class="subtitle">
+        I searched for something that could stay close to your skin every day when I cannot be there to hold your hand.
+        Tap the velvet jewelry box below to unwrap your birthday gift.
+      </p>
+
+      <!-- Luxury 3D Jewelry Box Stage -->
+      <div class="luxury-box-stage">
+        <div class="gift-light-burst" id="giftBurst"></div>
+
+        <!-- 3D Closed Box -->
+        <div class="jewelry-box-container" id="jewelryBox" onclick="openGiftBox()">
+          <!-- Base -->
+          <div class="box-base">
+            <div class="box-crest">
+              <h4>ROYAL VELVET</h4>
+              <span>Shifu 💕</span>
+            </div>
+          </div>
+
+          <!-- Ribbons & Bow -->
+          <div class="box-ribbon-v"></div>
+          <div class="box-ribbon-h"></div>
+          <div class="box-bow">🎁</div>
+
+          <!-- 3D Lid -->
+          <div class="box-lid">
+            <div class="box-crest">
+              <h4>FOR MY WIFE</h4>
+              <span>Tap to Open</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revealed Velvet Cushion Card with Real Photos -->
+        <div class="box-reveal-content" id="boxReveal">
+          <div class="bracelet-img-wrap">
+            <img src="photos/optimized/celebration_bracelet_bw.jpg" alt="Blue stone bracelet on wrist with red roses" class="bracelet-img">
+            <div class="sapphire-refraction"></div>
+            <div class="sapphire-sparkle"></div>
+          </div>
+
+          <div class="bracelet-message-box">
+            <p class="personal-whisper" style="margin: 0; font-size: 24px; color: #dbeafe;">
+              “Sapphire blue is the color of calm waters, loyal promises, and the endless midnight sky that covers both of us no matter how far apart we are.
+              Whenever you miss me, touch this blue stone on your wrist.
+              Feel its cool, steady weight, and know that my love is wrapped around your hand every second of every day.
+              You are my calm in every storm, my Shifumaa.”
+            </p>
+            <div style="margin-top: 16px; font-size: 11.5px; font-family: var(--cinzel); letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase;">
+              💎 Always With You · Wrapped Around Your Wrist
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px;" id="unboxingBtnWrap">
+        <button class="btn-gold" onclick="openGiftBox()">✨ Untie &amp; Open Your Gift</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GIMMICK: TOUCH HANDS ACROSS THE DISTANCE ==================== -->
+  <section class="section touch-bridge-section" id="touch-bridge-section">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">06 · Across The Miles</div>
+      <h2>Hold my hand <em>across the distance</em></h2>
+      <p class="subtitle">
+        Press and hold the heart button below. Keep your finger rested on the screen to feel my heartbeat bridge every mile between us.
+      </p>
+
+      <div class="hands-bridge-container">
+        <div class="hands-visual-row">
+          <div class="hand-node" title="Husband's Hand">🤲</div>
+          <div class="bridge-glow-line">
+            <div class="bridge-glow-fill" id="bridgeFill"></div>
+          </div>
+          <div class="hand-node" title="Shifu's Hand With Blue Stone Bracelet">💍</div>
+        </div>
+
+        <div class="touch-target-btn" id="bridgeBtn">
+          ❤️
+        </div>
+
+        <div id="bridgeStatus" style="font-family: var(--hand); font-size: 22px; color: var(--gold-light); margin-top: 18px; text-align: center;">
+          Press and hold to feel my heart...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PART 6: CINEMATIC FILM STREAM (SLOW GLIDE + ARROWS + CONTROLS) ==================== -->
+  <section class="film-section" id="film-section">
+    <div class="section-content reveal-on-scroll" style="margin-bottom: 24px;">
+      <div class="chapter-meta">07 · Our Living Film</div>
+      <h2>The movie <em>of our lives</em></h2>
+      <p class="subtitle">
+        Ninety-one quiet moments, stolen smiles, and tender memories.
+        Glide smoothly across our journey, or use the golden arrows to browse. Tap any memory to enlarge.
+      </p>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="film-controls-bar">
+      <button class="film-nav-btn" id="btnFilmPrev" aria-label="Previous Memory">❮</button>
+      <div class="film-counter-badge" id="filmCounter">MEMORIES OF SHIFU &amp; ME</div>
+      <button class="film-nav-btn" id="btnFilmNext" aria-label="Next Memory">❯</button>
+    </div>
+
+    <!-- Film Reel Draggable Viewport -->
+    <div class="film-reel-viewport" id="filmViewport">
+      <div class="sprocket-track sprocket-top"></div>
+      <div class="sprocket-track sprocket-bottom"></div>
+      
+      <div class="film-track" id="filmTrack">
+        <!-- Injected via JavaScript from optimized cards 1..91 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PART 7: REALISTIC CAKE CUTTING & CANDLE CEREMONY ==================== -->
+  <section class="section cake-section" id="cake-section">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">08 · The Midnight Wish</div>
+      <h2>Make a wish, <em>my wife</em></h2>
+      <p class="subtitle">
+        Close your eyes, take a deep breath, and whisper your secret wish into the quiet night.
+        Blow out the candles, and let us slice your birthday cake together.
+      </p>
+
+      <div class="cake-stage" id="cakeStage">
+        <!-- Golden Ribbon Cake Knife -->
+        <svg class="golden-knife" id="knife" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="knifeBlade" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="50%" stop-color="#f3c98b"/>
+              <stop offset="100%" stop-color="#a87932"/>
+            </linearGradient>
+            <linearGradient id="knifeHandle" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#2a0d18"/>
+              <stop offset="100%" stop-color="#60152b"/>
+            </linearGradient>
+          </defs>
+          <path d="M12 88 L72 28 L82 38 L22 98 Z" fill="url(#knifeBlade)"/>
+          <path d="M72 28 L88 12 L98 22 L82 38 Z" fill="url(#knifeHandle)"/>
+          <circle cx="88" cy="22" r="4.5" fill="#f3c98b" stroke="#fff" stroke-width="0.8"/>
+          <path d="M72 28 L82 38" stroke="#f3c98b" stroke-width="2"/>
+        </svg>
+
+        <!-- Realistic 3D Birthday Cake SVG -->
+        <svg class="cake-svg" viewBox="0 0 340 300">
+          <defs>
+            <radialGradient id="topFrosting" cx="50%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#fff9f5"/>
+              <stop offset="70%" stop-color="#fceddf"/>
+              <stop offset="100%" stop-color="#e8d2be"/>
+            </radialGradient>
+            <linearGradient id="tierGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fff8f2"/>
+              <stop offset="50%" stop-color="#f5e1d3"/>
+              <stop offset="100%" stop-color="#debfa8"/>
+            </linearGradient>
+            <linearGradient id="dripChocolate" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#d93b5a"/>
+              <stop offset="100%" stop-color="#8a1027"/>
+            </linearGradient>
+            <linearGradient id="standGold" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#9a722c"/>
+              <stop offset="25%" stop-color="#f3c98b"/>
+              <stop offset="50%" stop-color="#fff4e0"/>
+              <stop offset="75%" stop-color="#f3c98b"/>
+              <stop offset="100%" stop-color="#875f1d"/>
+            </linearGradient>
+            <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="35%" stop-color="#ffcc00"/>
+              <stop offset="70%" stop-color="#ff4500"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Golden Stand Base & Platter -->
+          <ellipse cx="170" cy="275" rx="145" ry="16" fill="url(#standGold)"/>
+          <ellipse cx="170" cy="270" rx="135" ry="12" fill="#200610" opacity="0.4"/>
+
+          <!-- Bottom Tier -->
+          <rect x="55" y="180" width="230" height="85" rx="16" fill="url(#tierGrad)"/>
+          <path d="M55 240 Q170 270 285 240 V265 H55 Z" fill="#b8937b" opacity="0.3"/>
+          <path d="M55 195 Q75 220 95 195 T135 195 T175 195 T215 195 T255 195 T285 195 V180 H55 Z" fill="url(#dripChocolate)"/>
+
+          <!-- Top Tier -->
+          <rect x="95" y="115" width="150" height="70" rx="14" fill="url(#tierGrad)"/>
+          <path d="M95 130 Q110 150 125 130 T155 130 T185 130 T215 130 T245 130 V115 H95 Z" fill="url(#dripChocolate)"/>
+
+          <!-- Cut Cake Slice -->
+          <g class="cake-slice-cut" id="cakeSlice">
+            <path d="M170 115 L218 145 L218 255 L170 255 Z" fill="#ffd1dc" opacity="0.95"/>
+            <path d="M170 150 L218 180" stroke="#8a1027" stroke-width="4"/>
+            <path d="M170 215 L218 245" stroke="#8a1027" stroke-width="4"/>
+            <circle cx="195" cy="130" r="5" fill="#e63956"/>
+          </g>
+
+          <!-- 3 Candles -->
+          <rect x="120" y="65" width="10" height="52" rx="3" fill="#f3c98b"/>
+          <line x1="120" y1="78" x2="130" y2="73" stroke="#e63956" stroke-width="2"/>
+          <line x1="120" y1="92" x2="130" y2="87" stroke="#e63956" stroke-width="2"/>
+          <line x1="125" y1="65" x2="125" y2="58" stroke="#333" stroke-width="1.5"/>
+          <path class="flame-particle" id="flame1" d="M125 36 Q115 50 125 60 Q135 50 125 36 Z" fill="url(#flameGlow)"/>
+
+          <rect x="165" y="52" width="10" height="65" rx="3" fill="#f3c98b"/>
+          <line x1="165" y1="68" x2="175" y2="63" stroke="#e63956" stroke-width="2"/>
+          <line x1="165" y1="84" x2="175" y2="79" stroke="#e63956" stroke-width="2"/>
+          <line x1="170" y1="52" x2="170" y2="44" stroke="#333" stroke-width="1.5"/>
+          <path class="flame-particle" id="flame2" d="M170 24 Q159 38 170 47 Q181 38 170 24 Z" fill="url(#flameGlow)"/>
+
+          <rect x="210" y="65" width="10" height="52" rx="3" fill="#f3c98b"/>
+          <line x1="210" y1="78" x2="220" y2="73" stroke="#e63956" stroke-width="2"/>
+          <line x1="210" y1="92" x2="220" y2="87" stroke="#e63956" stroke-width="2"/>
+          <line x1="215" y1="65" x2="215" y2="58" stroke="#333" stroke-width="1.5"/>
+          <path class="flame-particle" id="flame3" d="M215 36 Q205 50 215 60 Q225 50 215 36 Z" fill="url(#flameGlow)"/>
+
+          <!-- Strawberries on Top Tier -->
+          <circle cx="108" cy="115" r="7" fill="#e63956"/>
+          <path d="M106 109 L110 109 L108 107 Z" fill="#2d6a4f"/>
+          <circle cx="145" cy="116" r="6" fill="#e63956"/>
+          <circle cx="195" cy="116" r="6" fill="#e63956"/>
+          <circle cx="232" cy="115" r="7" fill="#e63956"/>
+          <path d="M230 109 L234 109 L232 107 Z" fill="#2d6a4f"/>
+        </svg>
+      </div>
+
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top: 16px;">
+        <button class="btn-gold" id="btn-blow">💨 Blow Out Candles</button>
+        <button class="btn-outline" id="btn-cut">🍰 Slice the Cake</button>
+      </div>
+
+      <!-- Plated Slice & First Bite Gimmick -->
+      <div class="first-bite-stage" id="firstBiteStage">
+        <svg class="dessert-plate-svg" id="dessertPlate" viewBox="0 0 100 80">
+          <ellipse cx="50" cy="55" rx="46" ry="16" fill="url(#standGold)"/>
+          <ellipse cx="50" cy="52" rx="42" ry="12" fill="#fffaf5"/>
+          <path id="platedSlice" d="M35 30 L65 42 L65 54 L35 50 Z" fill="#ffd1dc"/>
+          <path d="M35 30 L65 42" stroke="#d93b5a" stroke-width="3"/>
+          <circle cx="48" cy="34" r="3.5" fill="#e63956"/>
+        </svg>
+
+        <h4 style="font-family: var(--serif); font-size: 21px; color: var(--gold); margin-bottom: 6px;">
+          The first bite is for you, my love 🍓
+        </h4>
+        <p id="bitePromptText" style="font-family: var(--hand); font-size: 20px; color: var(--cream);">
+          Tap the cake slice to take your first birthday bite...
+        </p>
+      </div>
+
+      <!-- Wish Result Notification Banner -->
+      <div class="wish-banner" id="wishBanner">
+        <h3 style="font-family: var(--serif); font-size: 28px; color: var(--gold); margin-bottom: 8px;">
+          ✨ Happy Birthday, My Beloved Wife!
+        </h3>
+        <p style="font-family: var(--hand); font-size: 22px; color: var(--cream);">
+          Your secret wish has flown to the stars. May every single day of this new year surround you with gentle peace, beautiful smiles, and my unconditional love!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PART 8: LETTERS FROM MY HEART ==================== -->
+  <section class="section" id="notes-section" style="background: radial-gradient(circle at 50% 25%, #230817 0%, #0c040d 70%, var(--midnight) 100%);">
+    <div class="section-content reveal-on-scroll">
+      <div class="chapter-meta">09 · Whispers of My Heart</div>
+      <h2>Why my heart <em>belongs to you</em></h2>
+      <p class="subtitle">Tap each card to reveal what I cherish about you every single day.</p>
+
+      <!-- 6 Reasons 3D Flip Grid -->
+      <div class="reasons-grid">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <span class="card-num">I</span>
+              <span class="card-lbl">Your Laughter</span>
+            </div>
+            <div class="flip-back">
+              The way you laugh with your whole face, turning my hardest days into pure light.
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <span class="card-num">II</span>
+              <span class="card-lbl">Rainy Drives</span>
+            </div>
+            <div class="flip-back">
+              How a quiet drive in the rain feels like paradise simply because you are sitting beside me.
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <span class="card-num">III</span>
+              <span class="card-lbl">Your Gentleness</span>
+            </div>
+            <div class="flip-back">
+              Your infinite patience with my quiet moods and the way you understand me without words.
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <span class="card-num">IV</span>
+              <span class="card-lbl">Our Home</span>
+            </div>
+            <div class="flip-back">
+              You turned simple walls into the safest, warmest sanctuary I have ever known.
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <span class="card-num">V</span>
+              <span class="card-lbl">Your Faith</span>
+            </div>
+            <div class="flip-back">
+              You always believe in my dreams, even when I doubt myself. You are my anchor.
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <span class="card-num">VI</span>
+              <span class="card-lbl">My Best Friend</span>
+            </div>
+            <div class="flip-back">
+              After all this time, you are still the only person in the world I want to share every thought with.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Golden Scratch Card (Husband's Sacred Promise) -->
+      <div class="chapter-meta" style="margin-top: 50px;">A Lifelong Secret</div>
+      <h2>My sacred <em>promise</em></h2>
+      <p class="subtitle">Scratch off the golden foil with your finger to reveal what I promise you.</p>
+
+      <div class="scratch-box">
+        <div class="scratch-secret">
+          <h4>A HUSBAND’S SACRED PROMISE</h4>
+          <p>Valid for a lifetime of late-night car drives, forehead kisses every morning, standing beside you through every storm, and loving you more with every passing day.</p>
+        </div>
+        <canvas class="scratch-canvas" id="scratchCanvas"></canvas>
+      </div>
+
+      <!-- Wax Sealed Love Letter Envelope -->
+      <div class="chapter-meta" style="margin-top: 50px;">Only For Your Eyes</div>
+      <h2>Open when <em>you miss me</em></h2>
+      <p class="subtitle">Tap the wax seal to unseal my letter to you.</p>
+
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="wax-seal">💌</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Love Letter Modal -->
+<div class="modal-overlay" id="letterModal">
+  <div class="modal-card modal-parchment">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <h3>My Dearest Shifumaa,</h3>
+    <p>
+      Happy Birthday, my love, my wife, my favourite person in the entire universe.
+    </p>
+    <p>
+      If I could gather every sunrise we have shared, every night we laughed until our stomachs hurt, every quiet drive in the rain and every time our fingers intertwined, I would wrap them all up and place them into your hands today.
+    </p>
+    <p>
+      My heart skipped the very first second I saw your face through my camera lens, and it has never learned to stay calm since. You turn ordinary days into something warm, glowing, and unforgettable. Being loved by you is the greatest honor and blessing of my life.
+    </p>
+    <p>
+      Thank you for choosing me, again and again. I promise to keep choosing you, protecting your smile, and cherishing your heart in every season, every year, and every lifetime.
+    </p>
+    <div class="signature">
+      With all my soul &amp; a pocketful of kisses,<br>
+      Your Husband 💕
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>
+    Made with all my heart for my beloved wife <strong style="color: var(--gold);">Shifu</strong> · October 28, 2026
+  </p>
+  <p style="margin-top: 8px;">
+    Forever &amp; Always <span class="love-icon">💕</span>
+  </p>
+</footer>
+
+<script>
+// ==================== 1. Live Countdown ====================
+function updateCountdown() {
+  const targetDate = new Date('2026-10-28T00:00:00+05:30').getTime();
+  const now = new Date().getTime();
+  const diff = targetDate - now;
+
+  const timerEl = document.getElementById('timer-display');
+  const bannerEl = document.getElementById('countdown-text');
+
+  if (diff <= 0) {
+    if (timerEl) timerEl.textContent = "Happy Birthday, My Love! 🎉";
+    if (bannerEl) bannerEl.innerHTML = "🎂 <strong>Happy Birthday Shifu!</strong> 💕";
+  } else {
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    const timeStr = `${hours}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
+    if (timerEl) timerEl.textContent = timeStr;
+  }
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// ==================== 2. Luxury 3D Gift Box Unboxing Animation ====================
+let isGiftOpen = false;
+
+function openGiftBox() {
+  if (isGiftOpen) return;
+  isGiftOpen = true;
+
+  playLidSound();
+  playSparkleSound();
+
+  const jewelryBox = document.getElementById('jewelryBox');
+  const boxReveal = document.getElementById('boxReveal');
+  const giftBurst = document.getElementById('giftBurst');
+  const unboxingBtnWrap = document.getElementById('unboxingBtnWrap');
+
+  // Trigger burst of light
+  if (giftBurst) giftBurst.classList.add('active');
+  if (jewelryBox) jewelryBox.classList.add('is-open');
+
+  setTimeout(() => {
+    if (boxReveal) {
+      boxReveal.classList.add('opened');
+    }
+    triggerConfettiBurst(80);
+    playSparkleSound();
+    if (unboxingBtnWrap) {
+      unboxingBtnWrap.style.display = 'none';
+    }
+  }, 700);
+}
+
+// ==================== 3. Cinematic Film Reel (Slow, Smooth, Controllable) ====================
+const filmTrack = document.getElementById('filmTrack');
+const filmViewport = document.getElementById('filmViewport');
+const btnFilmPrev = document.getElementById('btnFilmPrev');
+const btnFilmNext = document.getElementById('btnFilmNext');
+
+if (filmTrack) {
+  let filmHtml = '';
+  for (let num = 1; num <= 91; num++) {
+    filmHtml += `
+      <div class="film-frame" data-index="${num}" onclick="openPhotoModal('photos/optimized/cards/${num}.jpg', 'Our Memory #${num}')">
+        <img src="photos/optimized/cards/${num}.jpg" alt="Memory #${num}" loading="lazy">
+        <span class="frame-date">KODAK · #${num.toString().padStart(2, '0')}</span>
+      </div>
+    `;
+  }
+  filmTrack.innerHTML = filmHtml;
+}
+
+let filmAutoScroll = true;
+let filmScrollSpeed = 0.55;
+
+function stepFilmReel() {
+  if (filmAutoScroll && filmViewport) {
+    filmViewport.scrollLeft += filmScrollSpeed;
+    if (filmViewport.scrollLeft >= filmViewport.scrollWidth - filmViewport.clientWidth - 5) {
+      filmViewport.scrollLeft = 0;
+    }
+  }
+  requestAnimationFrame(stepFilmReel);
+}
+requestAnimationFrame(stepFilmReel);
+
+if (filmViewport) {
+  filmViewport.addEventListener('pointerenter', () => { filmAutoScroll = false; });
+  filmViewport.addEventListener('pointerleave', () => { filmAutoScroll = true; });
+  filmViewport.addEventListener('touchstart', () => { filmAutoScroll = false; }, { passive: true });
+  filmViewport.addEventListener('touchend', () => { 
+    setTimeout(() => { filmAutoScroll = true; }, 3000); 
+  });
+}
+
+if (btnFilmPrev && filmViewport) {
+  btnFilmPrev.addEventListener('click', () => {
+    filmAutoScroll = false;
+    filmViewport.scrollBy({ left: -380, behavior: 'smooth' });
+    setTimeout(() => { filmAutoScroll = true; }, 4000);
+  });
+}
+
+if (btnFilmNext && filmViewport) {
+  btnFilmNext.addEventListener('click', () => {
+    filmAutoScroll = false;
+    filmViewport.scrollBy({ left: 380, behavior: 'smooth' });
+    setTimeout(() => { filmAutoScroll = true; }, 4000);
+  });
+}
+
+// ==================== 4. Audio Synthesis ====================
+let audioCtx = null;
+let masterGain = null;
+let isMusicPlaying = false;
+let musicInterval = null;
+let musicStep = 0;
+
+const chords = [
+  [48, 55, 59, 64],
+  [45, 52, 55, 60],
+  [41, 48, 52, 57],
+  [43, 50, 55, 59]
+];
+const m2f = m => 440 * Math.pow(2, (m - 69) / 12);
+
+function initAudio() {
+  if (audioCtx) return;
+  try {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.35;
+    masterGain.connect(audioCtx.destination);
+  } catch (e) {
+    console.warn("AudioContext error:", e);
+  }
+}
+
+function playNote(midi, time, duration, type = 'sine', vol = 0.22) {
+  if (!audioCtx) return;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = type;
+  osc.frequency.value = m2f(midi);
+
+  gain.gain.setValueAtTime(0, time);
+  gain.gain.linearRampToValueAtTime(vol, time + 0.08);
+  gain.gain.exponentialRampToValueAtTime(0.001, time + duration);
+
+  osc.connect(gain);
+  gain.connect(masterGain);
+  osc.start(time);
+  osc.stop(time + duration);
+}
+
+function tickMusic() {
+  if (!audioCtx || !isMusicPlaying) return;
+  const now = audioCtx.currentTime + 0.05;
+  const chordIdx = Math.floor(musicStep / 8) % 4;
+  const chord = chords[chordIdx];
+
+  if (musicStep % 8 === 0) {
+    chord.forEach(note => playNote(note, now, 3.8, 'sine', 0.12));
+  }
+
+  const arpNotes = [chord[0] + 12, chord[1] + 12, chord[2] + 12, chord[3] + 12, chord[2] + 12, chord[1] + 12];
+  const currentNote = arpNotes[musicStep % arpNotes.length];
+  playNote(currentNote, now, 0.95, 'triangle', 0.18);
+
+  musicStep++;
+}
+
+function startMusic() {
+  initAudio();
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  isMusicPlaying = true;
+  musicStep = 0;
+  if (!musicInterval) {
+    musicInterval = setInterval(tickMusic, 380);
+  }
+  document.getElementById('eqBars').classList.add('playing');
+  document.getElementById('music-label').textContent = 'Melody';
+}
+
+function pauseMusic() {
+  isMusicPlaying = false;
+  if (musicInterval) {
+    clearInterval(musicInterval);
+    musicInterval = null;
+  }
+  document.getElementById('eqBars').classList.remove('playing');
+  document.getElementById('music-label').textContent = 'Muted';
+}
+
+document.getElementById('music-toggle').addEventListener('click', () => {
+  if (isMusicPlaying) {
+    pauseMusic();
+  } else {
+    startMusic();
+  }
+});
+
+function handleFirstInteraction() {
+  if (!audioCtx) {
+    startMusic();
+  }
+  window.removeEventListener('pointerdown', handleFirstInteraction);
+}
+window.addEventListener('pointerdown', handleFirstInteraction, { once: true });
+
+function playLidSound() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(320, now);
+  osc.frequency.exponentialRampToValueAtTime(140, now + 0.25);
+  gain.gain.setValueAtTime(0.3, now);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+  osc.connect(gain);
+  gain.connect(masterGain);
+  osc.start(now);
+  osc.stop(now + 0.25);
+}
+
+function playBlowSound() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(260, now);
+  osc.frequency.exponentialRampToValueAtTime(60, now + 0.7);
+  gain.gain.setValueAtTime(0.45, now);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.7);
+  osc.connect(gain);
+  gain.connect(masterGain);
+  osc.start(now);
+  osc.stop(now + 0.7);
+}
+
+function playSliceSound() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'triangle';
+  osc.frequency.setValueAtTime(550, now);
+  osc.frequency.linearRampToValueAtTime(160, now + 0.35);
+  gain.gain.setValueAtTime(0.35, now);
+  gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+  osc.connect(gain);
+  gain.connect(masterGain);
+  osc.start(now);
+  osc.stop(now + 0.35);
+}
+
+function playHeartbeatSound() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  [0, 0.18].forEach(offset => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(65, now + offset);
+    osc.frequency.exponentialRampToValueAtTime(35, now + offset + 0.14);
+    gain.gain.setValueAtTime(0.4, now + offset);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + offset + 0.14);
+    osc.connect(gain);
+    gain.connect(masterGain);
+    osc.start(now + offset);
+    osc.stop(now + offset + 0.14);
+  });
+}
+
+function playSparkleSound() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  [1200, 1500, 1800, 2200].forEach((freq, idx) => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0, now + idx * 0.08);
+    gain.gain.linearRampToValueAtTime(0.2, now + idx * 0.08 + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.5);
+    osc.connect(gain);
+    gain.connect(masterGain);
+    osc.start(now + idx * 0.08);
+    osc.stop(now + idx * 0.08 + 0.5);
+  });
+}
+
+// ==================== Fireworks & Flame Sound Effects (Web Audio Synthesizer) ====================
+function playFireworkWhistle() {
+  if (!audioCtx) return;
+  try {
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    const filter = audioCtx.createBiquadFilter();
+
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(320 + Math.random() * 80, now);
+    osc.frequency.exponentialRampToValueAtTime(1450 + Math.random() * 250, now + 0.65);
+
+    filter.type = 'bandpass';
+    filter.frequency.setValueAtTime(650, now);
+    filter.frequency.exponentialRampToValueAtTime(2400, now + 0.65);
+    filter.Q.value = 4.5;
+
+    gain.gain.setValueAtTime(0.001, now);
+    gain.gain.linearRampToValueAtTime(0.18, now + 0.08);
+    gain.gain.setValueAtTime(0.18, now + 0.45);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.68);
+
+    osc.connect(filter);
+    filter.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    osc.start(now);
+    osc.stop(now + 0.68);
+  } catch(e) {}
+}
+
+function playFireworkBoom() {
+  if (!audioCtx) return;
+  try {
+    const now = audioCtx.currentTime;
+
+    // 1. Deep Sub-bass Thud / Punch
+    const subOsc = audioCtx.createOscillator();
+    const subGain = audioCtx.createGain();
+    subOsc.type = 'sine';
+    subOsc.frequency.setValueAtTime(150, now);
+    subOsc.frequency.exponentialRampToValueAtTime(32, now + 0.45);
+
+    subGain.gain.setValueAtTime(0.7, now);
+    subGain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+
+    subOsc.connect(subGain);
+    subGain.connect(audioCtx.destination);
+    subOsc.start(now);
+    subOsc.stop(now + 0.6);
+
+    // 2. Air Blast Noise
+    const bufferSize = Math.floor(audioCtx.sampleRate * 0.45);
+    const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const output = noiseBuffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+      output[i] = Math.random() * 2 - 1;
+    }
+    const whiteNoise = audioCtx.createBufferSource();
+    whiteNoise.buffer = noiseBuffer;
+
+    const filter = audioCtx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.setValueAtTime(850, now);
+    filter.frequency.exponentialRampToValueAtTime(100, now + 0.42);
+
+    const noiseGain = audioCtx.createGain();
+    noiseGain.gain.setValueAtTime(0.55, now);
+    noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.42);
+
+    whiteNoise.connect(filter);
+    filter.connect(noiseGain);
+    noiseGain.connect(audioCtx.destination);
+    whiteNoise.start(now);
+
+    // 3. Crackling sparkle pops (willow sizzle)
+    const pops = 4 + Math.floor(Math.random() * 5);
+    for (let p = 0; p < pops; p++) {
+      const popTime = now + 0.12 + Math.random() * 0.45;
+      const popOsc = audioCtx.createOscillator();
+      const popGain = audioCtx.createGain();
+      popOsc.type = 'triangle';
+      popOsc.frequency.setValueAtTime(1800 + Math.random() * 1400, popTime);
+      popGain.gain.setValueAtTime(0.12, popTime);
+      popGain.gain.exponentialRampToValueAtTime(0.001, popTime + 0.04);
+
+      popOsc.connect(popGain);
+      popGain.connect(audioCtx.destination);
+      popOsc.start(popTime);
+      popOsc.stop(popTime + 0.04);
+    }
+  } catch(e) {}
+}
+
+function playFlameWhooshSound() {
+  if (!audioCtx) return;
+  try {
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(180, now);
+    osc.frequency.exponentialRampToValueAtTime(45, now + 0.55);
+    gain.gain.setValueAtTime(0.35, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.55);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(now);
+    osc.stop(now + 0.55);
+  } catch(e) {}
+}
+
+// ==================== Happy Birthday Song (Web Audio Synthesizer) ====================
+let birthdaySongPlaying = false;
+function playHappyBirthdaySong() {
+  if (!audioCtx || birthdaySongPlaying) return;
+  birthdaySongPlaying = true;
+
+  // Fade out & pause BG music completely
+  pauseMusic();
+  if (masterGain) {
+    masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
+    masterGain.gain.setValueAtTime(masterGain.gain.value, audioCtx.currentTime);
+    masterGain.gain.linearRampToValueAtTime(0.0, audioCtx.currentTime + 0.4);
+  }
+
+  // Note frequencies for warm celebratory tone
+  const F = { C4:261.63, D4:293.66, E4:329.63, F4:349.23, G4:392.00, A4:440.00, Bb4:466.16, C5:523.25, D5:587.33 };
+  
+  // Melody notes: [frequency, duration_in_seconds]
+  const song = [
+    // Happy Birthday to you
+    [F.C4, 0.32], [F.C4, 0.18], [F.D4, 0.52], [F.C4, 0.52], [F.F4, 0.52], [F.E4, 1.05],
+    // Happy Birthday to you
+    [F.C4, 0.32], [F.C4, 0.18], [F.D4, 0.52], [F.C4, 0.52], [F.G4, 0.52], [F.F4, 1.05],
+    // Happy Birthday dear Shifumaa
+    [F.C4, 0.32], [F.C4, 0.18], [F.C5, 0.52], [F.A4, 0.52], [F.F4, 0.52], [F.E4, 0.52], [F.D4, 1.05],
+    // Happy Birthday to you
+    [F.Bb4, 0.32], [F.Bb4, 0.18], [F.A4, 0.52], [F.F4, 0.52], [F.G4, 0.52], [F.F4, 1.35]
+  ];
+
+  // Dedicated gain bus for birthday song
+  const songBus = audioCtx.createGain();
+  songBus.gain.setValueAtTime(0, audioCtx.currentTime);
+  songBus.gain.linearRampToValueAtTime(0.65, audioCtx.currentTime + 0.5);
+  songBus.connect(audioCtx.destination);
+
+  let t = audioCtx.currentTime + 0.6;
+  let totalDur = 0.6;
+
+  song.forEach(([freq, dur]) => {
+    // 1. Primary Melody - warm triangle wave
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.value = freq;
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(0.62, t + 0.02);
+    g.gain.setValueAtTime(0.62, t + dur - 0.08);
+    g.gain.linearRampToValueAtTime(0, t + dur);
+    osc.connect(g);
+    g.connect(songBus);
+    osc.start(t);
+    osc.stop(t + dur);
+
+    // 2. Chime / Bell Sparkle Shimmer (octave up)
+    const osc2 = audioCtx.createOscillator();
+    const g2 = audioCtx.createGain();
+    osc2.type = 'sine';
+    osc2.frequency.value = freq * 2;
+    g2.gain.setValueAtTime(0, t);
+    g2.gain.linearRampToValueAtTime(0.16, t + 0.02);
+    g2.gain.setValueAtTime(0.16, t + dur - 0.08);
+    g2.gain.linearRampToValueAtTime(0, t + dur);
+    osc2.connect(g2);
+    g2.connect(songBus);
+    osc2.start(t);
+    osc2.stop(t + dur);
+
+    // 3. Gentle Warm Sub Resonance
+    const osc3 = audioCtx.createOscillator();
+    const g3 = audioCtx.createGain();
+    osc3.type = 'sine';
+    osc3.frequency.value = freq * 0.5;
+    g3.gain.setValueAtTime(0, t);
+    g3.gain.linearRampToValueAtTime(0.2, t + 0.04);
+    g3.gain.setValueAtTime(0.2, t + dur - 0.1);
+    g3.gain.linearRampToValueAtTime(0, t + dur);
+    osc3.connect(g3);
+    g3.connect(songBus);
+    osc3.start(t);
+    osc3.stop(t + dur);
+
+    t += dur;
+    totalDur += dur;
+  });
+
+  // When song completes, restore background music smoothly
+  setTimeout(() => {
+    birthdaySongPlaying = false;
+    if (masterGain) {
+      masterGain.gain.setValueAtTime(0, audioCtx.currentTime);
+      masterGain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + 1.8);
+    }
+    startMusic();
+  }, (totalDur + 1.2) * 1000);
+}
+
+// ==================== 5. Canvas Particles, Fireworks, Fire & Balloons Physics ====================
+const canvas = document.getElementById('fx');
+const ctx = canvas.getContext('2d');
+let particles = [];
+let fireworkRockets = [];
+let screenFlash = 0;
+let screenFlashColor = '#ffffff';
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+function spawnParticle(burst = false, type = 'petal', originX = null, originY = null) {
+  const x = originX !== null ? originX : (burst ? window.innerWidth / 2 : Math.random() * window.innerWidth);
+  const y = originY !== null ? originY : (burst ? window.innerHeight / 2 : -20);
+  const angle = Math.random() * Math.PI * 2;
+  const speed = burst ? (Math.random() * 8 + 3) : (Math.random() * 1.5 + 0.8);
+
+  particles.push({
+    x, y,
+    vx: burst ? Math.cos(angle) * speed : (Math.random() * 1.2 - 0.6),
+    vy: burst ? Math.sin(angle) * speed : speed,
+    size: type === 'smoke' ? Math.random() * 8 + 4 : Math.random() * 8 + 5,
+    rotation: Math.random() * 360,
+    vRot: Math.random() * 4 - 2,
+    color: type === 'confetti'
+      ? ['#ffd700','#ff69b4','#00bfff','#ff3366','#a78bfa','#ffffff'][Math.floor(Math.random() * 6)]
+      : type === 'smoke'
+      ? 'rgba(230,220,240,0.45)'
+      : ['#ff6a78','#e63956','#ffd9a0','#f47285','#3b82f6'][Math.floor(Math.random() * 5)],
+    alpha: 1,
+    life: burst ? Math.random() * 90 + 70 : (type === 'smoke' ? Math.random() * 80 + 40 : Math.random() * 350 + 150),
+    type
+  });
+}
+
+function triggerSmokePuff(cx, cy) {
+  for (let i = 0; i < 28; i++) {
+    particles.push({
+      x: cx + (Math.random() * 20 - 10),
+      y: cy + (Math.random() * 10 - 5),
+      vx: Math.random() * 1.6 - 0.8,
+      vy: -(Math.random() * 2.5 + 1.2),
+      size: Math.random() * 10 + 6,
+      rotation: Math.random() * 360, vRot: Math.random() * 2 - 1,
+      color: 'rgba(240,230,245,0.55)', alpha: 0.85,
+      life: Math.random() * 70 + 45, type: 'smoke'
+    });
+  }
+}
+
+// Real fire animation effect: glowing fiery flame particles and rising embers
+function triggerFireBurst(cx, cy, count = 45) {
+  playFlameWhooshSound();
+  const fireColors = ['#ffffff', '#fff7b2', '#ffea00', '#ffaa00', '#ff6600', '#ff3300', '#d00000'];
+  for (let i = 0; i < count; i++) {
+    const angle = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 0.9;
+    const spd = Math.random() * 6.5 + 2.0;
+    particles.push({
+      x: cx + (Math.random() * 16 - 8),
+      y: cy,
+      vx: Math.cos(angle) * spd,
+      vy: Math.sin(angle) * spd - Math.random() * 2.2,
+      size: Math.random() * 6 + 2.5,
+      rotation: Math.random() * 360,
+      vRot: Math.random() * 4 - 2,
+      color: fireColors[Math.floor(Math.random() * fireColors.length)],
+      alpha: 1,
+      life: Math.random() * 65 + 30,
+      maxLife: 95,
+      type: 'fire',
+      wobble: Math.random() * 0.35 - 0.17,
+      glow: true
+    });
+  }
+}
+
+// Real firework explosion full realization
+function explodeFirework(rocket) {
+  playFireworkBoom();
+  screenFlash = 0.32;
+  screenFlashColor = rocket.color;
+
+  if (rocket.isHeart) {
+    // Special Romantic Heart-Shaped Firework Constellation
+    const heartPoints = 75;
+    for (let i = 0; i < heartPoints; i++) {
+      const t = (i / heartPoints) * Math.PI * 2;
+      const hx = 16 * Math.pow(Math.sin(t), 3);
+      const hy = -(13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t));
+      const spd = 0.32;
+      particles.push({
+        x: rocket.x,
+        y: rocket.y,
+        vx: hx * spd + (Math.random() - 0.5) * 0.4,
+        vy: hy * spd + (Math.random() - 0.5) * 0.4,
+        size: Math.random() * 3.5 + 2,
+        rotation: 0, vRot: 0,
+        color: Math.random() > 0.4 ? '#ff2a6d' : '#ffd700',
+        alpha: 1,
+        life: Math.random() * 85 + 55,
+        maxLife: 140,
+        type: 'spark',
+        glow: true
+      });
+    }
+  } else {
+    // Spherical Peony / Chrysanthemum burst with high particle count
+    const n = 80 + Math.floor(Math.random() * 35);
+    for (let i = 0; i < n; i++) {
+      const angle = (i / n) * Math.PI * 2 + Math.random() * 0.25;
+      const spd = Math.random() * 7.5 + 3.0;
+      particles.push({
+        x: rocket.x, y: rocket.y,
+        vx: Math.cos(angle) * spd,
+        vy: Math.sin(angle) * spd,
+        size: Math.random() * 4.2 + 1.8,
+        rotation: 0, vRot: 0,
+        color: Math.random() > 0.22 ? rocket.color : '#ffffff',
+        alpha: 1,
+        life: Math.random() * 80 + 45,
+        maxLife: 125,
+        type: 'spark',
+        glow: true
+      });
+    }
+
+    // Secondary Golden Willow Shimmer Ring
+    for (let i = 0; i < 26; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      particles.push({
+        x: rocket.x, y: rocket.y,
+        vx: Math.cos(angle) * (Math.random() * 3.8 + 1.0),
+        vy: Math.sin(angle) * (Math.random() * 3.8 + 1.0),
+        size: Math.random() * 2.8 + 1.0,
+        rotation: 0, vRot: 0,
+        color: '#ffd700',
+        alpha: 1,
+        life: Math.random() * 65 + 35,
+        maxLife: 100,
+        type: 'spark',
+        glow: true
+      });
+    }
+  }
+}
+
+// Continuous celebratory fireworks salvo
+function triggerFireworks(count = 14) {
+  const colors = [
+    '#ffd700', '#ff3366', '#00f0ff', '#a78bfa',
+    '#ff6f00', '#76ff03', '#ff69b4', '#ff1744',
+    '#ffe082', '#ffffff'
+  ];
+
+  for (let r = 0; r < count; r++) {
+    setTimeout(() => {
+      const sx = window.innerWidth * (0.1 + Math.random() * 0.8);
+      const targetY = window.innerHeight * (0.06 + Math.random() * 0.28);
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const isHeart = (r === 2 || r === 6 || r === 10);
+
+      playFireworkWhistle();
+
+      fireworkRockets.push({
+        x: sx,
+        y: window.innerHeight,
+        vy: -(window.innerHeight - targetY) / 36,
+        targetY,
+        color,
+        isHeart,
+        exploded: false,
+        trail: []
+      });
+    }, r * 420 + Math.random() * 200);
+  }
+}
+
+// Floating red heart balloons lifting into the night sky
+function triggerHeartBalloons(count = 14) {
+  const balloonColors = ['#ff1744', '#d50000', '#ff2a6d', '#e91e63', '#c2185b'];
+  for (let i = 0; i < count; i++) {
+    setTimeout(() => {
+      particles.push({
+        x: window.innerWidth * (0.06 + Math.random() * 0.88),
+        y: window.innerHeight + 65,
+        vx: (Math.random() - 0.5) * 0.65,
+        vy: -(Math.random() * 1.5 + 1.15),
+        size: Math.random() * 16 + 22,
+        rotation: 0, vRot: 0,
+        color: balloonColors[Math.floor(Math.random() * balloonColors.length)],
+        alpha: 1,
+        life: Math.random() * 340 + 220,
+        type: 'balloon',
+        sway: Math.random() * 0.038 - 0.019,
+        swayOffset: Math.random() * Math.PI * 2,
+        phase: 0
+      });
+    }, i * 210 + Math.random() * 260);
+  }
+}
+
+function triggerConfettiBurst(count = 90) {
+  for (let i = 0; i < count; i++) {
+    spawnParticle(true, 'confetti', window.innerWidth / 2, window.innerHeight * 0.45);
+  }
+}
+
+function updateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Atmospheric sky flash from exploding fireworks against the dark night
+  if (screenFlash > 0.01) {
+    ctx.save();
+    ctx.fillStyle = screenFlashColor;
+    ctx.globalAlpha = screenFlash;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
+    screenFlash *= 0.86;
+  }
+
+  // --- Firework ascending rockets ---
+  for (let i = fireworkRockets.length - 1; i >= 0; i--) {
+    const r = fireworkRockets[i];
+    if (r.exploded) { fireworkRockets.splice(i, 1); continue; }
+    r.trail.push({ x: r.x, y: r.y });
+    if (r.trail.length > 15) r.trail.shift();
+    r.y += r.vy;
+
+    // Glowing exhaust sparks dropping from rocket
+    if (Math.random() > 0.25) {
+      particles.push({
+        x: r.x + (Math.random() * 4 - 2),
+        y: r.y + 2,
+        vx: (Math.random() - 0.5) * 1.2,
+        vy: Math.random() * 2.2 + 1.0,
+        size: Math.random() * 2.5 + 1.2,
+        rotation: 0, vRot: 0,
+        color: '#ffea00',
+        alpha: 0.9,
+        life: 18,
+        type: 'spark',
+        glow: true
+      });
+    }
+
+    // Rocket luminous trail
+    for (let t = 0; t < r.trail.length; t++) {
+      ctx.save();
+      ctx.globalAlpha = (t / r.trail.length) * 0.7;
+      ctx.fillStyle = r.color;
+      ctx.shadowColor = r.color;
+      ctx.shadowBlur = 8;
+      ctx.beginPath();
+      ctx.arc(r.trail[t].x, r.trail[t].y, 2.5 * (t / r.trail.length), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    // Glowing rocket head
+    ctx.save();
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = '#ffffff';
+    ctx.shadowColor = r.color;
+    ctx.shadowBlur = 16;
+    ctx.beginPath();
+    ctx.arc(r.x, r.y, 3.5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    if (r.y <= r.targetY) {
+      r.exploded = true;
+      explodeFirework(r);
+    }
+  }
+
+  // --- All Particles Loop ---
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.life--;
+
+    if (p.type === 'balloon') {
+      p.phase = (p.phase || 0) + 0.026;
+      p.x += p.vx + Math.sin(p.phase + p.swayOffset) * 0.5;
+      p.y += p.vy;
+      p.alpha = p.life > 60 ? 1 : Math.max(0, p.life / 60);
+      const s = p.size;
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.globalAlpha = Math.max(0, p.alpha);
+
+      // 3D Red Heart Balloon
+      ctx.fillStyle = p.color;
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = 22;
+      ctx.beginPath();
+      ctx.moveTo(0, -s * 0.22);
+      ctx.bezierCurveTo(-s * 0.52, -s * 0.75, -s * 1.05, -s * 0.08, 0, s * 0.55);
+      ctx.bezierCurveTo(s * 1.05, -s * 0.08, s * 0.52, -s * 0.75, 0, -s * 0.22);
+      ctx.fill();
+
+      // Specular 3D Highlight sheen on top-left lobe
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.45)';
+      ctx.beginPath();
+      ctx.ellipse(-s * 0.32, -s * 0.35, s * 0.18, s * 0.09, -Math.PI / 4, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Balloon Knot at bottom
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.moveTo(-2, s * 0.55);
+      ctx.lineTo(2, s * 0.55);
+      ctx.lineTo(0, s * 0.55 + 4);
+      ctx.closePath();
+      ctx.fill();
+
+      // Swaying dangling silk string
+      ctx.strokeStyle = 'rgba(255, 220, 230, 0.65)';
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.moveTo(0, s * 0.55 + 4);
+      const swayX = Math.sin(p.phase * 1.5) * 6;
+      ctx.quadraticCurveTo(swayX, s * 0.55 + 24, swayX * 0.5, s * 0.55 + 46);
+      ctx.stroke();
+      ctx.restore();
+
+    } else if (p.type === 'fire') {
+      // Real fire flame embers physics
+      p.x += p.vx + p.wobble;
+      p.y += p.vy;
+      p.vy -= 0.12; // upward thermal buoyancy
+      p.vx *= 0.96;
+      p.size *= 0.975;
+      p.alpha = Math.max(0, p.life / 55);
+      if (p.size < 0.4) { particles.splice(i, 1); continue; }
+
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, p.alpha);
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = p.size * 4;
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+
+    } else if (p.type === 'spark') {
+      // Exploded firework star physics
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.085; // gentle gravity
+      p.vx *= 0.965; // air drag
+      p.vy *= 0.965;
+      p.size *= 0.985;
+      p.alpha = Math.max(0, p.life / (p.maxLife || 80));
+
+      ctx.save();
+      // Add twinkling flicker
+      const flicker = 0.75 + Math.random() * 0.25;
+      ctx.globalAlpha = Math.max(0, p.alpha * flicker);
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = p.size * 4.5;
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, Math.max(0.4, p.size), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+
+    } else {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rotation += p.vRot;
+
+      if (p.type === 'smoke') {
+        p.size += 0.22;
+        p.alpha = Math.max(0, p.life / 70);
+        p.vx += Math.sin(p.y * 0.05) * 0.04;
+      } else if (p.type === 'confetti') {
+        p.vy += 0.12;
+        p.vx *= 0.98;
+      } else {
+        p.vx += Math.sin(p.y * 0.015) * 0.03;
+      }
+
+      if (p.life < 30 && p.type !== 'smoke') p.alpha = p.life / 30;
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate((p.rotation * Math.PI) / 180);
+      ctx.globalAlpha = Math.max(0, p.alpha);
+      ctx.fillStyle = p.color;
+
+      if (p.type === 'petal') {
+        ctx.beginPath();
+        ctx.ellipse(0, 0, p.size, p.size * 0.6, 0, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (p.type === 'smoke') {
+        ctx.beginPath();
+        ctx.arc(0, 0, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      } else {
+        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.7);
+      }
+      ctx.restore();
+    }
+
+    if (p.life <= 0 || p.y > window.innerHeight + 80 || p.y < -260) {
+      particles.splice(i, 1);
+    }
+  }
+
+  if (particles.filter(p => p.type === 'petal').length < 35) spawnParticle(false, 'petal');
+
+  requestAnimationFrame(updateParticles);
+}
+requestAnimationFrame(updateParticles);
+
+// ==================== 6. Cake Cutting & Ceremony ====================
+const btnBlow = document.getElementById('btn-blow');
+const btnCut = document.getElementById('btn-cut');
+const cakeStage = document.getElementById('cakeStage');
+const wishBanner = document.getElementById('wishBanner');
+const firstBiteStage = document.getElementById('firstBiteStage');
+const dessertPlate = document.getElementById('dessertPlate');
+const bitePromptText = document.getElementById('bitePromptText');
+
+function extinguishCandles() {
+  cakeStage.classList.add('candles-blown');
+  playBlowSound();
+  playSparkleSound();
+
+  const rect = cakeStage.getBoundingClientRect();
+  const c1x = rect.left + rect.width * 0.38, c1y = rect.top + rect.height * 0.22;
+  const c2x = rect.left + rect.width * 0.50, c2y = rect.top + rect.height * 0.16;
+  const c3x = rect.left + rect.width * 0.63, c3y = rect.top + rect.height * 0.22;
+
+  // Realistic smoke plumes from extinguished wicks
+  triggerSmokePuff(c1x, c1y);
+  triggerSmokePuff(c2x, c2y);
+  triggerSmokePuff(c3x, c3y);
+
+  // Real fire flame ember bursts from each candle position
+  triggerFireBurst(c1x, c1y, 45);
+  triggerFireBurst(c2x, c2y, 60);
+  triggerFireBurst(c3x, c3y, 45);
+
+  // Real fireworks show
+  triggerFireworks(10);
+
+  // Red heart balloons floating up
+  triggerHeartBalloons(14);
+
+  // Happy Birthday song (mutes BG music automatically and plays melody)
+  playHappyBirthdaySong();
+
+  triggerConfettiBurst(60);
+  wishBanner.style.display = 'block';
+}
+
+if (btnBlow) {
+  btnBlow.addEventListener('click', extinguishCandles);
+}
+
+['flame1', 'flame2', 'flame3'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('click', extinguishCandles);
+});
+
+if (btnCut) {
+  btnCut.addEventListener('click', () => {
+    // 1. MAKE BACKGROUND FULL BLACK WITH SPOTLIGHT ON CAKE
+    document.body.classList.add('cake-blackout-active');
+
+    // 2. Start golden knife slice animation & sound
+    cakeStage.classList.add('cutting-animation');
+    playSliceSound();
+
+    setTimeout(() => {
+      cakeStage.classList.add('cut-done');
+
+      // Real fireworks display in full realization across pitch black sky
+      triggerFireworks(16);
+
+      // Red heart balloons lifting to the sky
+      triggerHeartBalloons(14);
+
+      // Real fire sparks bursting along the slice line of the cake
+      const rect2 = cakeStage.getBoundingClientRect();
+      triggerFireBurst(rect2.left + rect2.width * 0.50, rect2.top + rect2.height * 0.38, 70);
+
+      triggerConfettiBurst(140);
+      playSparkleSound();
+
+      // Play Happy Birthday song if not already active
+      if (!birthdaySongPlaying) {
+        playHappyBirthdaySong();
+      }
+
+      wishBanner.style.display = 'block';
+      if (firstBiteStage) firstBiteStage.style.display = 'block';
+    }, 900);
+  });
+}
+
+if (dessertPlate) {
+  dessertPlate.addEventListener('click', () => {
+    const platedSlice = document.getElementById('platedSlice');
+    if (platedSlice) {
+      platedSlice.setAttribute('d', 'M35 30 Q46 36 44 42 Q52 46 56 42 L65 42 L65 54 L35 50 Z');
+    }
+    playSparkleSound();
+    triggerConfettiBurst(40);
+    if (bitePromptText) {
+      bitePromptText.innerHTML = `
+        <span style="color:var(--gold);">"Sweet and gentle, just like you."</span><br>
+        I wish I were holding this fork to feed you right now, Shifumaa. Soon, my darling. Every birthday from this year forward, I will be right beside you.
+      `;
+    }
+  });
+}
+
+// ==================== 7. GIMMICK: Touch Hands Across the Distance ====================
+const bridgeBtn = document.getElementById('bridgeBtn');
+const bridgeFill = document.getElementById('bridgeFill');
+const bridgeStatus = document.getElementById('bridgeStatus');
+let bridgeTimer = null;
+let bridgeProgress = 0;
+
+function updateBridgeHold() {
+  bridgeProgress = Math.min(100, bridgeProgress + 1.8);
+  if (bridgeFill) bridgeFill.style.width = bridgeProgress + '%';
+
+  if (navigator.vibrate && Math.floor(bridgeProgress) % 15 === 0) {
+    navigator.vibrate([80, 100, 80]);
+  }
+
+  if (Math.floor(bridgeProgress) % 25 === 0) {
+    playHeartbeatSound();
+  }
+
+  if (bridgeProgress >= 100) {
+    clearInterval(bridgeTimer);
+    bridgeTimer = null;
+    if (bridgeBtn) bridgeBtn.classList.remove('active');
+    if (bridgeStatus) {
+      bridgeStatus.innerHTML = `
+        <span style="color:var(--gold); font-size:24px;">“I can feel you right here beside me...”</span><br>
+        Distance can never separate two hearts that beat as one. I love you, Shifu.
+      `;
+    }
+    triggerConfettiBurst(70);
+    playSparkleSound();
+  } else {
+    if (bridgeStatus) {
+      bridgeStatus.textContent = `Connecting our hearts across the miles... ${Math.floor(bridgeProgress)}%`;
+    }
+  }
+}
+
+if (bridgeBtn) {
+  bridgeBtn.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    bridgeBtn.classList.add('active');
+    playHeartbeatSound();
+    if (!bridgeTimer) {
+      bridgeTimer = setInterval(updateBridgeHold, 30);
+    }
+  });
+
+  ['pointerup', 'pointerleave', 'pointercancel'].forEach(evt => {
+    window.addEventListener(evt, () => {
+      if (bridgeTimer) {
+        clearInterval(bridgeTimer);
+        bridgeTimer = null;
+        if (bridgeBtn) bridgeBtn.classList.remove('active');
+        if (bridgeProgress < 100 && bridgeStatus) {
+          bridgeStatus.textContent = 'Hold your finger on the heart to feel me...';
+        }
+      }
+    });
+  });
+}
+
+// ==================== 8. GIMMICK: Wipe the Steamy Car Window ====================
+const steamCanvas = document.getElementById('steamCanvas');
+if (steamCanvas) {
+  const sCtx = steamCanvas.getContext('2d');
+  
+  function initSteamCanvas() {
+    steamCanvas.width = steamCanvas.offsetWidth || 560;
+    steamCanvas.height = steamCanvas.offsetHeight || 390;
+
+    sCtx.fillStyle = 'rgba(25, 12, 28, 0.88)';
+    sCtx.fillRect(0, 0, steamCanvas.width, steamCanvas.height);
+
+    for (let i = 0; i < 40; i++) {
+      sCtx.fillStyle = 'rgba(255, 255, 255, 0.04)';
+      sCtx.beginPath();
+      sCtx.arc(Math.random() * steamCanvas.width, Math.random() * steamCanvas.height, Math.random() * 30 + 10, 0, Math.PI * 2);
+      sCtx.fill();
+    }
+  }
+  setTimeout(initSteamCanvas, 200);
+
+  let isWiping = false;
+
+  function wipeAt(x, y) {
+    sCtx.globalCompositeOperation = 'destination-out';
+    sCtx.beginPath();
+    sCtx.arc(x, y, 32, 0, Math.PI * 2);
+    sCtx.fill();
+  }
+
+  function handleWipeMove(e) {
+    if (!isWiping) return;
+    const rect = steamCanvas.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    wipeAt(clientX - rect.left, clientY - rect.top);
+  }
+
+  steamCanvas.addEventListener('pointerdown', e => {
+    isWiping = true;
+    handleWipeMove(e);
+  });
+  window.addEventListener('pointermove', handleWipeMove);
+  window.addEventListener('pointerup', () => { isWiping = false; });
+}
+
+// ==================== 9. GIMMICK: 4 Midnight Whispers in the Stars ====================
+const starWhispers = {
+  1: { title: "Midnight Thought · I", text: "Remember the rainy night when you fell asleep holding my hand in the passenger seat? I drove a little slower just so you could sleep peacefully." },
+  2: { title: "Midnight Thought · II", text: "The way you softly squeeze my hand three times whenever we are walking in a crowd. It will always be my favourite unspoken 'I love you'." },
+  3: { title: "Midnight Thought · III", text: "Whenever I have a hard or exhausting day, coming home to your smile makes every burden instantly vanish. You are my greatest peace." },
+  4: { title: "Midnight Thought · IV", text: "My sacred promise to you: I will love you through every season, every storm, and every grey hair. Happy Birthday, my whole world." }
+};
+
+function openStarWhisper(num) {
+  playSparkleSound();
+  const data = starWhispers[num];
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay active';
+  modal.innerHTML = `
+    <div class="modal-card modal-parchment" style="text-align:center;">
+      <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">&times;</button>
+      <div style="font-size:32px; margin-bottom:10px;">✨</div>
+      <h3 style="font-size:36px; margin-bottom:12px;">${data.title}</h3>
+      <p style="font-size:22px; color:#3b1928;">“${data.text}”</p>
+      <div class="signature">Forever Yours 💕</div>
+    </div>
+  `;
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.remove();
+  });
+  document.body.appendChild(modal);
+}
+
+// ==================== 10. Interactive Scratch Card ====================
+const scratchCanvas = document.getElementById('scratchCanvas');
+if (scratchCanvas) {
+  const sCtx = scratchCanvas.getContext('2d');
+  scratchCanvas.width = 340;
+  scratchCanvas.height = 170;
+
+  const sGrad = sCtx.createLinearGradient(0, 0, 340, 170);
+  sGrad.addColorStop(0, '#f3c98b');
+  sGrad.addColorStop(0.5, '#ffd9a0');
+  sGrad.addColorStop(1, '#c49a58');
+  sCtx.fillStyle = sGrad;
+  sCtx.fillRect(0, 0, 340, 170);
+
+  sCtx.font = '600 13px Inter, sans-serif';
+  sCtx.fillStyle = '#4a2505';
+  sCtx.textAlign = 'center';
+  sCtx.fillText('✨ SCRATCH WITH FINGER ✨', 170, 90);
+
+  let isScratching = false;
+
+  function scratchAt(x, y) {
+    sCtx.globalCompositeOperation = 'destination-out';
+    sCtx.beginPath();
+    sCtx.arc(x, y, 22, 0, Math.PI * 2);
+    sCtx.fill();
+  }
+
+  function handleScratchMove(e) {
+    if (!isScratching) return;
+    const rect = scratchCanvas.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
+    scratchAt(x, y);
+  }
+
+  scratchCanvas.addEventListener('pointerdown', e => {
+    isScratching = true;
+    handleScratchMove(e);
+  });
+  window.addEventListener('pointermove', handleScratchMove);
+  window.addEventListener('pointerup', () => { isScratching = false; });
+}
+
+// ==================== 11. Wax Envelope & Modal ====================
+const envelopeWrap = document.getElementById('envelopeWrap');
+const envelope = document.getElementById('envelope');
+const letterModal = document.getElementById('letterModal');
+const modalClose = document.getElementById('modalClose');
+
+if (envelopeWrap) {
+  envelopeWrap.addEventListener('click', () => {
+    envelope.classList.add('open');
+    playSparkleSound();
+    setTimeout(() => {
+      letterModal.classList.add('active');
+    }, 600);
+  });
+}
+
+if (modalClose) {
+  modalClose.addEventListener('click', () => {
+    letterModal.classList.remove('active');
+  });
+}
+
+letterModal.addEventListener('click', e => {
+  if (e.target === letterModal) {
+    letterModal.classList.remove('active');
+  }
+});
+
+function openPhotoModal(imgSrc, caption) {
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay active';
+  modal.innerHTML = `
+    <div class="modal-card" style="text-align:center; padding:18px;">
+      <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">&times;</button>
+      <img src="${imgSrc}" style="width:100%; max-height:65vh; object-fit:contain; border-radius:8px;" alt="${caption}">
+      <p style="font-family: var(--hand); font-size:23px; color:#5a1928; margin-top:14px;">${caption}</p>
+    </div>
+  `;
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.remove();
+  });
+  document.body.appendChild(modal);
+}
+
+// ==================== 12. Parallax Scroll & Reveal Observers ====================
+const revealEls = document.querySelectorAll('.reveal-on-scroll');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// 3D Parallax Tilt for Hero Card
+const heroCard = document.getElementById('heroCard');
+window.addEventListener('pointermove', e => {
+  if (!heroCard) return;
+  const x = (e.clientX / window.innerWidth) - 0.5;
+  const y = (e.clientY / window.innerHeight) - 0.5;
+  heroCard.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 14}deg)`;
+});
+
+window.addEventListener('deviceorientation', e => {
+  if (!heroCard || e.gamma == null) return;
+  const tiltX = Math.max(-15, Math.min(15, e.gamma / 3));
+  const tiltY = Math.max(-15, Math.min(15, (e.beta - 45) / 3));
+  heroCard.style.transform = `rotateY(${tiltX}deg) rotateX(${-tiltY}deg)`;
+});
+</script>
+
+</body>
+</html>

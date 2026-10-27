@@ -7,8 +7,10 @@
 <meta name="description" content="A private romantic love letter and luxury birthday experience for my beloved wife Shifu on October 28.">
 <meta property="og:title" content="Happy Birthday, My Shifu 💕">
 <meta property="og:description" content="Across every mile, my heart is right beside you. Happy Birthday, my wife.">
-<meta property="og:image" content="photos/optimized/portrait_hero.jpg">
 <meta name="theme-color" content="#05040a">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1116,20 +1118,10 @@ h1 em, h2 em {
   letter-spacing: 0.15em;
 }
 
-/* Cake Cut Celebration Night Ambiance */
-body.cake-blackout-active {
-  background-color: #030206 !important;
-  transition: background-color 0.8s ease;
-}
-
+/* ==================== REALISTIC 3D BIRTHDAY CAKE & CEREMONY ==================== */
 .cake-section {
   position: relative;
   background: radial-gradient(circle at 50% 35%, #3d0a22 0%, #150516 70%, var(--midnight) 100%);
-  transition: background 0.8s ease;
-}
-
-body.cake-blackout-active .cake-section {
-  background: radial-gradient(circle at 50% 40%, rgba(255, 230, 180, 0.22) 0%, rgba(10, 3, 12, 0.95) 50%, #030206 85%) !important;
 }
 
 .cake-stage {
@@ -1141,32 +1133,6 @@ body.cake-blackout-active .cake-section {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-}
-
-.cake-stage::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 390px;
-  height: 390px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 225, 160, 0.28) 0%, rgba(230, 57, 86, 0.14) 45%, transparent 70%);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 1.4s ease;
-  z-index: 0;
-}
-
-body.cake-blackout-active .cake-stage::before {
-  opacity: 1;
-  animation: spotlightPulse 3.5s infinite alternate ease-in-out;
-}
-
-@keyframes spotlightPulse {
-  0% { transform: translateX(-50%) scale(0.95); opacity: 0.8; }
-  100% { transform: translateX(-50%) scale(1.1); opacity: 1; }
 }
 
 .cake-svg {
@@ -2641,37 +2607,8 @@ function playFlameWhooshSound() {
 }
 
 // ==================== Happy Birthday Song & Celebration Blackout ====================
+// ==================== Happy Birthday Song (Web Audio Synthesizer) ====================
 let birthdaySongPlaying = false;
-let blackoutTimer = null;
-
-function onBlackoutTap() {
-  endCakeBlackout();
-}
-
-function startCakeBlackout(durationMs = 8500) {
-  document.body.classList.add('cake-blackout-active');
-  if (blackoutTimer) {
-    clearTimeout(blackoutTimer);
-  }
-  // Automatically remove blackout right after the fireworks (~8.5s)
-  blackoutTimer = setTimeout(() => {
-    endCakeBlackout();
-  }, durationMs);
-
-  // Tap anywhere on screen immediately restores normal stage
-  setTimeout(() => {
-    window.addEventListener('pointerdown', onBlackoutTap, { capture: true, once: true });
-  }, 350);
-}
-
-function endCakeBlackout() {
-  if (blackoutTimer) {
-    clearTimeout(blackoutTimer);
-    blackoutTimer = null;
-  }
-  window.removeEventListener('pointerdown', onBlackoutTap, { capture: true });
-  document.body.classList.remove('cake-blackout-active');
-}
 
 function playHappyBirthdaySong() {
   if (!audioCtx || birthdaySongPlaying) return;
@@ -2756,7 +2693,7 @@ function playHappyBirthdaySong() {
     totalDur += dur;
   });
 
-  // When song completes, restore background music smoothly and return to normal stage
+  // When song completes, restore background music smoothly
   setTimeout(() => {
     birthdaySongPlaying = false;
     if (masterGain) {
@@ -2764,7 +2701,6 @@ function playHappyBirthdaySong() {
       masterGain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + 1.8);
     }
     startMusic();
-    endCakeBlackout(); // Return to normal stage!
   }, (totalDur + 1.2) * 1000);
 }
 
@@ -3243,25 +3179,22 @@ if (btnBlow) {
 
 if (btnCut) {
   btnCut.addEventListener('click', () => {
-    // 1. MAKE BACKGROUND FULL BLACK WITH SPOTLIGHT ON CAKE
-    startCakeBlackout(8500);
-
-    // 2. Start golden knife slice animation & sound
+    // Golden knife slice animation & sound
     cakeStage.classList.add('cutting-animation');
     playSliceSound();
 
     setTimeout(() => {
       cakeStage.classList.add('cut-done');
 
-      // Real fireworks display in full realization across pitch black sky
-      triggerFireworks(16);
+      // Real fireworks display (same as candle blow, with launch whistles, booms and sky flashes)
+      triggerFireworks(14);
 
       // Red heart balloons lifting to the sky
       triggerHeartBalloons(14);
 
       // Real fire sparks bursting along the slice line of the cake
       const rect2 = cakeStage.getBoundingClientRect();
-      triggerFireBurst(rect2.left + rect2.width * 0.50, rect2.top + rect2.height * 0.38, 70);
+      triggerFireBurst(rect2.left + rect2.width * 0.50, rect2.top + rect2.height * 0.38, 65);
 
       triggerConfettiBurst(140);
       playSparkleSound();
